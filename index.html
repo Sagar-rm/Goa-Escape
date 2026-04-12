@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0a1628" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="description" content="Goa Escape – Your ultimate Goa tourism destination. Book water sports, scuba diving, dinner cruises, party boats, hotels, apartments & complete Goa packages. Best deals on Goa adventures!" />
+  <meta name="keywords" content="Goa water sports, Goa packages, scuba diving Goa, dinner cruise Goa, party boat Goa, hotels in Goa, Goa adventure tourism, best Goa tour packages, Goa beach activities, Goa holidays" />
+  <meta name="author" content="Goa Escape" />
+  <meta property="og:title" content="Goa Escape | Water Sports, Packages & More – Your Goa Adventure Starts Here" />
+  <meta property="og:description" content="Discover the best of Goa – water sports, scuba diving, sunset cruise, party boats, hotels & all-inclusive packages. Book now for the best deals!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.goaescape.com" />
+  <meta property="og:image" content="images/hero_beach.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.goaescape.com" />
+  <title>Goa Escape | Water Sports, Packages & Beach Adventures in Goa</title>
+
+  <!-- Google Fonts -->
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" /></noscript>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <!-- Structured Data / JSON-LD for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TouristInformationCenter",
+    "name": "Goa Escape",
+    "description": "Best Goa water sports, packages, dinner cruises, scuba diving, and hotels",
+    "url": "https://www.goaescape.com",
+    "telephone": "+91-9876543210",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Calangute Beach Road",
+      "addressLocality": "Calangute",
+      "addressRegion": "Goa",
+      "postalCode": "403516",
+      "addressCountry": "IN"
+    },
+    "openingHours": "Mo-Su 07:00-22:00",
+    "areaServed": "Goa, India"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ===== LOADING SCREEN ===== -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="wave-loader">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <p class="loader-text">Goa Escape</p>
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar" class="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Goa Escape Home">
+        <span class="logo-icon"><i class="fas fa-umbrella-beach"></i></span>
+        <div class="logo-text">
+          <span class="logo-main">Goa Escape</span>
+          <span class="logo-sub">Feel the Vibe</span>
+        </div>
+      </a>
+
+      <ul class="nav-links" id="navLinks" role="menubar">
+        <li role="none"><a href="index.html" role="menuitem" class="nav-link active">Home</a></li>
+        <li role="none"><a href="water-sports.html" role="menuitem" class="nav-link">Water Sports</a></li>
+        <li role="none"><a href="packages.html" role="menuitem" class="nav-link">Packages</a></li>
+        <li role="none" class="dropdown">
+          <a href="#" role="menuitem" class="nav-link dropdown-toggle">Experiences <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="cruises.html" role="menuitem"><i class="fas fa-ship"></i> Dinner Cruise</a></li>
+            <li><a href="cruises.html#party-boat" role="menuitem"><i class="fas fa-music"></i> Party Boat</a></li>
+            <li><a href="water-sports.html#scuba" role="menuitem"><i class="fas fa-fish"></i> Scuba Diving</a></li>
+          </ul>
+        </li>
+        <li role="none"><a href="stay.html" role="menuitem" class="nav-link">Stay</a></li>
+        <li role="none"><a href="contact.html" role="menuitem" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="contact.html#booking" id="nav-book-btn" class="btn btn-primary">
+          <i class="fas fa-calendar-check"></i> Book Now
+        </a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== MOBILE SIDEBAR ===== -->
+  <div id="sidebarBackdrop" class="sidebar-backdrop" aria-hidden="true"></div>
+  <aside id="mobileSidebar" class="mobile-sidebar" role="dialog" aria-label="Navigation Menu" aria-modal="true">
+    <!-- Header -->
+    <div class="sidebar-header">
+      <a href="index.html" class="sidebar-logo">
+        <span class="sidebar-logo-icon"><i class="fas fa-umbrella-beach"></i></span>
+        <span class="sidebar-logo-text">
+          <span class="sidebar-logo-main">Goa Escape</span>
+          <span class="sidebar-logo-sub">Feel the Vibe</span>
+        </span>
+      </a>
+      <button id="sidebarClose" class="sidebar-close" aria-label="Close menu">
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="sidebar-quick">
+      <a href="contact.html#booking" class="sidebar-quick-btn">
+        <i class="fas fa-calendar-check"></i>
+        Book Now
+      </a>
+      <a href="tel:+919876543210" class="sidebar-quick-btn">
+        <i class="fas fa-phone"></i>
+        Call Us
+      </a>
+      <a href="https://wa.me/919876543210" class="sidebar-quick-btn" target="_blank" rel="noopener">
+        <i class="fab fa-whatsapp"></i>
+        WhatsApp
+      </a>
+    </div>
+
+    <!-- Nav Label -->
+    <p class="sidebar-nav-label">Navigation</p>
+
+    <!-- Nav Links -->
+    <ul class="sidebar-nav">
+      <li>
+        <a href="index.html" class="active">
+          <span class="sidebar-nav-icon" style="background:rgba(0,119,182,0.18);"><i class="fas fa-home" style="color:#90e0ef;"></i></span>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="water-sports.html">
+          <span class="sidebar-nav-icon" style="background:rgba(0,119,182,0.18);"><i class="fas fa-water" style="color:#90e0ef;"></i></span>
+          Water Sports
+        </a>
+      </li>
+      <li>
+        <a href="packages.html">
+          <span class="sidebar-nav-icon" style="background:rgba(244,164,53,0.18);"><i class="fas fa-suitcase" style="color:#f4a435;"></i></span>
+          Packages
+        </a>
+      </li>
+      <li>
+        <!-- Experiences accordion -->
+        <button id="sidebarExpToggle" class="sidebar-sub-toggle">
+          <span class="sidebar-nav-icon" style="background:rgba(231,76,139,0.18);"><i class="fas fa-star" style="color:#e74c8b;"></i></span>
+          Experiences
+          <i class="fas fa-chevron-down sidebar-toggle-arrow"></i>
+        </button>
+        <div id="sidebarExpContent" class="sidebar-sub-content">
+          <ul class="sidebar-sub">
+            <li><a href="cruises.html"><i class="fas fa-ship"></i> Dinner Cruise</a></li>
+            <li><a href="cruises.html#party-boat"><i class="fas fa-music"></i> Party Boat</a></li>
+            <li><a href="water-sports.html#scuba"><i class="fas fa-fish"></i> Scuba Diving</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="stay.html">
+          <span class="sidebar-nav-icon" style="background:rgba(45,134,83,0.18);"><i class="fas fa-hotel" style="color:#2d8653;"></i></span>
+          Stay
+        </a>
+      </li>
+      <li>
+        <a href="contact.html">
+          <span class="sidebar-nav-icon" style="background:rgba(255,107,53,0.18);"><i class="fas fa-envelope" style="color:#ff6b35;"></i></span>
+          Contact
+        </a>
+      </li>
+    </ul>
+
+    <!-- Book Now CTA -->
+    <a href="contact.html#booking" class="sidebar-book-btn">
+      <i class="fas fa-calendar-check"></i> Book Your Adventure
+    </a>
+
+    <!-- Social Links -->
+    <p class="sidebar-nav-label" style="padding-top:0;">Follow Us</p>
+    <div class="sidebar-social">
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="https://wa.me/919876543210" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <!-- Footer Note -->
+    <p class="sidebar-footer">&copy; 2025 Goa Escape &bull; hello@goaescape.com</p>
+  </aside>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero" aria-label="Hero Banner">
+    <div class="hero-bg">
+      <img src="images/hero_beach.png" alt="Goa Beach Sunset" class="hero-img" loading="eager" />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <!-- Floating particles -->
+    <div class="particles" aria-hidden="true">
+      <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+      <div class="particle"></div><div class="particle"></div><div class="particle"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-star"></i> #1 Goa Adventure Platform
+      </div>
+      <h1 class="hero-title">
+        <span class="title-script">Welcome to</span>
+        <span class="title-main">GOA ESCAPE</span>
+        <span class="title-sub">Where Every Wave Tells a Story</span>
+      </h1>
+      <p class="hero-desc">
+        Discover water sports, luxury cruises, scuba diving, beachside stays & curated Goa packages — all in one place. Your perfect Goa adventure is just one click away.
+      </p>
+
+      <!-- Search Bar -->
+      <div class="hero-search-wrap">
+        <form class="hero-search" id="searchForm" role="search" aria-label="Search Goa packages and activities">
+          <div class="search-group">
+            <label for="search-activity" class="sr-only">Activity or Package</label>
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" id="search-activity" name="activity" placeholder="Search activity, package, hotel..." class="search-input" autocomplete="off" />
+          </div>
+          <div class="search-group search-group-sm">
+            <label for="search-date" class="sr-only">Travel Date</label>
+            <i class="fas fa-calendar search-icon"></i>
+            <input type="date" id="search-date" name="date" class="search-input" min="2025-01-01" />
+          </div>
+          <div class="search-group search-group-sm">
+            <label for="search-persons" class="sr-only">Number of persons</label>
+            <i class="fas fa-users search-icon"></i>
+            <select id="search-persons" name="persons" class="search-input">
+              <option value="">Persons</option>
+              <option value="1">1 Person</option>
+              <option value="2">2 People</option>
+              <option value="3-5">3–5 People</option>
+              <option value="6-10">6–10 People</option>
+              <option value="10+">10+ Group</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-search" id="search-submit-btn">
+            <i class="fas fa-search"></i> Search
+          </button>
+        </form>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="hero-quick-links">
+        <a href="water-sports.html" class="quick-link"><i class="fas fa-water"></i> Water Sports</a>
+        <a href="cruises.html" class="quick-link"><i class="fas fa-ship"></i> Cruise</a>
+        <a href="water-sports.html#scuba" class="quick-link"><i class="fas fa-fish"></i> Scuba</a>
+        <a href="packages.html" class="quick-link"><i class="fas fa-suitcase"></i> Packages</a>
+        <a href="stay.html" class="quick-link"><i class="fas fa-hotel"></i> Hotels</a>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <a href="#stats" class="scroll-indicator" aria-label="Scroll down">
+      <span class="scroll-dot"></span>
+      <span class="scroll-text">Scroll Down</span>
+    </a>
+  </section>
+
+  <!-- ===== STATS STRIP ===== -->
+  <section id="stats" class="stats-strip" aria-label="Our achievements">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item" data-count="15000">
+          <span class="stat-number" id="stat-customers">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Happy Customers</span>
+        </div>
+        <div class="stat-item" data-count="50">
+          <span class="stat-number" id="stat-activities">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Activities</span>
+        </div>
+        <div class="stat-item" data-count="8">
+          <span class="stat-number" id="stat-years">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Years in Goa</span>
+        </div>
+        <div class="stat-item" data-count="4.9">
+          <span class="stat-number" id="stat-rating">0</span><span class="stat-plus">★</span>
+          <span class="stat-label">Average Rating</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section id="services" class="section services-section" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow"><i class="fas fa-compass"></i> What We Offer</p>
+        <h2 id="services-heading" class="section-title">Everything Goa Has to Offer</h2>
+        <p class="section-subtitle">From thrilling water adventures to luxurious stays — we've got your complete Goa experience covered</p>
+      </div>
+
+      <div class="services-grid">
+
+        <!-- Water Sports -->
+        <article class="service-card" id="service-water-sports">
+          <div class="sc-img-wrap">
+            <img src="images/water_sports.png" alt="Water sports activities in Goa – jet ski, parasailing, banana boat" class="sc-img" loading="lazy" />
+            <div class="sc-badge"><i class="fas fa-fire"></i> Most Popular</div>
+          </div>
+          <div class="sc-body">
+            <div class="sc-icon"><i class="fas fa-water"></i></div>
+            <h3 class="sc-title">Water Sports</h3>
+            <p class="sc-desc">Jet skiing, parasailing, banana boat, bumper ride, speed boat & more. Feel the adrenaline on Goa's pristine beaches!</p>
+            <ul class="sc-features">
+              <li><i class="fas fa-check"></i> Safety equipment provided</li>
+              <li><i class="fas fa-check"></i> Expert instructors</li>
+              <li><i class="fas fa-check"></i> All beaches covered</li>
+            </ul>
+            <div class="sc-price-row">
+              <span class="sc-price">₹500 <small>onwards</small></span>
+              <a href="water-sports.html" class="btn btn-outline-small">View All</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Scuba Diving -->
+        <article class="service-card" id="service-scuba">
+          <div class="sc-img-wrap">
+            <img src="images/scuba_diving.png" alt="Scuba diving in Goa – underwater coral reef and marine life" class="sc-img" loading="lazy" />
+            <div class="sc-badge sc-badge-blue"><i class="fas fa-medal"></i> Certified</div>
+          </div>
+          <div class="sc-body">
+            <div class="sc-icon sc-icon-blue"><i class="fas fa-fish"></i></div>
+            <h3 class="sc-title">Scuba Diving</h3>
+            <p class="sc-desc">Explore the magical underwater world of Goa with PADI-certified instructors. Beginners & advanced sessions available.</p>
+            <ul class="sc-features">
+              <li><i class="fas fa-check"></i> PADI certified instructors</li>
+              <li><i class="fas fa-check"></i> Underwater photography</li>
+              <li><i class="fas fa-check"></i> All equipment included</li>
+            </ul>
+            <div class="sc-price-row">
+              <span class="sc-price">₹3,500 <small>/ person</small></span>
+              <a href="water-sports.html#scuba" class="btn btn-outline-small">Book Now</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dinner Cruise -->
+        <article class="service-card" id="service-dinner-cruise">
+          <div class="sc-img-wrap">
+            <img src="images/dinner_cruise.png" alt="Luxury dinner cruise on Mandovi River, Goa at sunset" class="sc-img" loading="lazy" />
+            <div class="sc-badge sc-badge-gold"><i class="fas fa-crown"></i> Luxury</div>
+          </div>
+          <div class="sc-body">
+            <div class="sc-icon sc-icon-gold"><i class="fas fa-ship"></i></div>
+            <h3 class="sc-title">Dinner Cruise</h3>
+            <p class="sc-desc">Sail on the scenic Mandovi River with live music, Goan cuisine, folk dance performances & a breathtaking sunset view.</p>
+            <ul class="sc-features">
+              <li><i class="fas fa-check"></i> Live entertainment</li>
+              <li><i class="fas fa-check"></i> Multi-cuisine buffet</li>
+              <li><i class="fas fa-check"></i> Sunset & evening cruises</li>
+            </ul>
+            <div class="sc-price-row">
+              <span class="sc-price">₹1,200 <small>/ person</small></span>
+              <a href="cruises.html" class="btn btn-outline-small">View Cruises</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Party Boat -->
+        <article class="service-card" id="service-party-boat">
+          <div class="sc-img-wrap">
+            <img src="images/dinner_cruise.png" alt="Party boat experience in Goa with music and dancing" class="sc-img" loading="lazy" />
+            <div class="sc-badge sc-badge-pink"><i class="fas fa-music"></i> Party</div>
+          </div>
+          <div class="sc-body">
+            <div class="sc-icon sc-icon-pink"><i class="fas fa-music"></i></div>
+            <h3 class="sc-title">Party Boat</h3>
+            <p class="sc-desc">Dance, drink & party on the sea! The wildest party experience in Goa with DJ nights, cocktails & amazing views.</p>
+            <ul class="sc-features">
+              <li><i class="fas fa-check"></i> Live DJ & dance floor</li>
+              <li><i class="fas fa-check"></i> Unlimited drinks option</li>
+              <li><i class="fas fa-check"></i> Night & afternoon slots</li>
+            </ul>
+            <div class="sc-price-row">
+              <span class="sc-price">₹1,500 <small>/ person</small></span>
+              <a href="cruises.html#party-boat" class="btn btn-outline-small">Party Now</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- View All CTA -->
+      <div class="section-cta">
+        <a href="water-sports.html" class="btn btn-primary btn-lg">
+          <i class="fas fa-th-list"></i> View All Activities
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY GOA ESCAPE SECTION ===== -->
+  <section class="section why-section" aria-labelledby="why-heading">
+    <div class="why-bg-pattern" aria-hidden="true"></div>
+    <div class="container">
+      <div class="why-inner">
+        <div class="why-content">
+          <p class="section-eyebrow"><i class="fas fa-award"></i> Why Choose Us</p>
+          <h2 id="why-heading" class="section-title text-left">Why Goa Escape is <br /><em>Your Best Choice</em></h2>
+          <p class="section-subtitle text-left">We're not just another travel agency. We're locals who live and breathe Goa, committed to giving you the most authentic, safe and unforgettable experience.</p>
+
+          <div class="why-features">
+            <div class="why-feature">
+              <div class="wf-icon"><i class="fas fa-shield-alt"></i></div>
+              <div class="wf-text">
+                <h4>100% Safe & Certified</h4>
+                <p>All our water sports and diving activities follow international safety standards with certified professionals.</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="wf-icon"><i class="fas fa-rupee-sign"></i></div>
+              <div class="wf-text">
+                <h4>Best Price Guaranteed</h4>
+                <p>We offer the most competitive prices in Goa. Find the same package cheaper elsewhere — we'll match it!</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="wf-icon"><i class="fas fa-headset"></i></div>
+              <div class="wf-text">
+                <h4>24/7 Customer Support</h4>
+                <p>Our team is always available via WhatsApp, call or email to assist you before, during and after your trip.</p>
+              </div>
+            </div>
+            <div class="why-feature">
+              <div class="wf-icon"><i class="fas fa-map-marked-alt"></i></div>
+              <div class="wf-text">
+                <h4>Local Expertise</h4>
+                <p>We know every beach, every hidden gem, every best spot in Goa — because we've lived here for over 8 years.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="packages.html" class="btn btn-primary">
+            <i class="fas fa-suitcase-rolling"></i> Browse Packages
+          </a>
+        </div>
+
+        <div class="why-image-block">
+          <img src="images/packages_collage.png" alt="Explore Goa – beaches, nightlife, heritage and adventures" class="why-img" loading="lazy" />
+          <div class="why-img-badge">
+            <i class="fas fa-thumbs-up"></i>
+            <span>Trusted by<br /><strong>15,000+</strong> travelers</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PACKAGES SECTION ===== -->
+  <section id="packages" class="section packages-section" aria-labelledby="packages-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow"><i class="fas fa-suitcase"></i> Goa Packages</p>
+        <h2 id="packages-heading" class="section-title">Handpicked Goa Packages</h2>
+        <p class="section-subtitle">From budget getaways to luxury escapes — we have the perfect Goa package for every traveler</p>
+      </div>
+
+      <!-- Package Tabs -->
+      <div class="pkg-tabs" role="tablist" aria-label="Package categories">
+        <button class="pkg-tab active" role="tab" aria-selected="true" data-filter="all" id="tab-all">All Packages</button>
+        <button class="pkg-tab" role="tab" aria-selected="false" data-filter="budget" id="tab-budget">Budget</button>
+        <button class="pkg-tab" role="tab" aria-selected="false" data-filter="honeymoon" id="tab-honeymoon">Honeymoon</button>
+        <button class="pkg-tab" role="tab" aria-selected="false" data-filter="family" id="tab-family">Family</button>
+        <button class="pkg-tab" role="tab" aria-selected="false" data-filter="adventure" id="tab-adventure">Adventure</button>
+        <button class="pkg-tab" role="tab" aria-selected="false" data-filter="luxury" id="tab-luxury">Luxury</button>
+      </div>
+
+      <div class="packages-grid" id="packagesGrid">
+
+        <article class="pkg-card" data-category="budget" id="pkg-beach-bliss">
+          <div class="pkg-img-wrap">
+            <img src="images/hero_beach.png" alt="Goa Beach Bliss Budget Package" class="pkg-img" loading="lazy" />
+            <div class="pkg-duration"><i class="fas fa-clock"></i> 3N / 4D</div>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-tags">
+              <span class="pkg-tag">Budget</span>
+              <span class="pkg-tag pkg-tag-green">Best Seller</span>
+            </div>
+            <h3 class="pkg-title">Beach Bliss Getaway</h3>
+            <p class="pkg-desc">Hotel stay + daily breakfast + Calangute beach water sports + Old Goa sightseeing. Perfect for friends & solo travelers.</p>
+            <ul class="pkg-includes">
+              <li><i class="fas fa-hotel"></i> 3 nights hotel</li>
+              <li><i class="fas fa-utensils"></i> Daily breakfast</li>
+              <li><i class="fas fa-water"></i> Water sports</li>
+              <li><i class="fas fa-bus"></i> Airport transfer</li>
+            </ul>
+            <div class="pkg-footer">
+              <div class="pkg-price">
+                <span class="p-old">₹12,000</span>
+                <span class="p-new">₹8,999</span>
+                <span class="p-per">per person</span>
+              </div>
+              <a href="packages.html#beach-bliss" class="btn btn-primary btn-sm">Book Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pkg-card" data-category="honeymoon" id="pkg-romantic-goa">
+          <div class="pkg-img-wrap">
+            <img src="images/dinner_cruise.png" alt="Romantic Goa Honeymoon Package with dinner cruise" class="pkg-img" loading="lazy" />
+            <div class="pkg-duration"><i class="fas fa-clock"></i> 4N / 5D</div>
+            <div class="pkg-featured-badge">❤️ Honeymoon</div>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-tags">
+              <span class="pkg-tag pkg-tag-pink">Honeymoon</span>
+              <span class="pkg-tag pkg-tag-green">Popular</span>
+            </div>
+            <h3 class="pkg-title">Romantic Goa Escape</h3>
+            <p class="pkg-desc">Exclusive resort with private beach, couple spa, sunset dinner cruise & dolphin watching. The perfect romantic getaway.</p>
+            <ul class="pkg-includes">
+              <li><i class="fas fa-hotel"></i> 4 nights beach resort</li>
+              <li><i class="fas fa-ship"></i> Sunset dinner cruise</li>
+              <li><i class="fas fa-spa"></i> Couple spa</li>
+              <li><i class="fas fa-camera"></i> Photo session</li>
+            </ul>
+            <div class="pkg-footer">
+              <div class="pkg-price">
+                <span class="p-old">₹28,000</span>
+                <span class="p-new">₹19,999</span>
+                <span class="p-per">per couple</span>
+              </div>
+              <a href="packages.html#romantic-goa" class="btn btn-primary btn-sm">Book Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pkg-card" data-category="family" id="pkg-family-fun">
+          <div class="pkg-img-wrap">
+            <img src="images/water_sports.png" alt="Goa Family Fun Package with water sports and sightseeing" class="pkg-img" loading="lazy" />
+            <div class="pkg-duration"><i class="fas fa-clock"></i> 5N / 6D</div>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-tags">
+              <span class="pkg-tag pkg-tag-blue">Family</span>
+            </div>
+            <h3 class="pkg-title">Family Fun Package</h3>
+            <p class="pkg-desc">The complete Goa family trip — beach, water park, spice plantation, dolphin cruise & child-friendly water sports.</p>
+            <ul class="pkg-includes">
+              <li><i class="fas fa-hotel"></i> 5 nights family resort</li>
+              <li><i class="fas fa-fish"></i> Dolphin spotting cruise</li>
+              <li><i class="fas fa-leaf"></i> Spice plantation tour</li>
+              <li><i class="fas fa-water"></i> Water sports for all</li>
+            </ul>
+            <div class="pkg-footer">
+              <div class="pkg-price">
+                <span class="p-old">₹45,000</span>
+                <span class="p-new">₹34,999</span>
+                <span class="p-per">family of 4</span>
+              </div>
+              <a href="packages.html#family-fun" class="btn btn-primary btn-sm">Book Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pkg-card" data-category="adventure" id="pkg-adventure-rush">
+          <div class="pkg-img-wrap">
+            <img src="images/scuba_diving.png" alt="Goa Adventure Rush Package with scuba diving and water sports" class="pkg-img" loading="lazy" />
+            <div class="pkg-duration"><i class="fas fa-clock"></i> 3N / 4D</div>
+            <div class="pkg-featured-badge" style="background:#ff6b35;">🔥 Thrill</div>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-tags">
+              <span class="pkg-tag pkg-tag-orange">Adventure</span>
+              <span class="pkg-tag pkg-tag-green">Hot Deal</span>
+            </div>
+            <h3 class="pkg-title">Adventure Rush</h3>
+            <p class="pkg-desc">Scuba diving + parasailing + jet ski + kayaking + night fishing. For the true adventure junkie in Goa!</p>
+            <ul class="pkg-includes">
+              <li><i class="fas fa-fish"></i> Scuba diving session</li>
+              <li><i class="fas fa-parachute-box"></i> Parasailing</li>
+              <li><i class="fas fa-water"></i> Jet ski + kayak</li>
+              <li><i class="fas fa-moon"></i> Night fishing</li>
+            </ul>
+            <div class="pkg-footer">
+              <div class="pkg-price">
+                <span class="p-old">₹15,000</span>
+                <span class="p-new">₹10,999</span>
+                <span class="p-per">per person</span>
+              </div>
+              <a href="packages.html#adventure-rush" class="btn btn-primary btn-sm">Book Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pkg-card" data-category="luxury" id="pkg-luxury-retreat">
+          <div class="pkg-img-wrap">
+            <img src="images/hotel_resort.png" alt="Luxury Goa Retreat at 5-star beachside resort" class="pkg-img" loading="lazy" />
+            <div class="pkg-duration"><i class="fas fa-clock"></i> 5N / 6D</div>
+            <div class="pkg-featured-badge" style="background:#c9a84c;">👑 Luxury</div>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-tags">
+              <span class="pkg-tag pkg-tag-gold">Luxury</span>
+            </div>
+            <h3 class="pkg-title">Luxury Goa Retreat</h3>
+            <p class="pkg-desc">5-star beachside resort, private pool villa, gourmet dining, yacht charter, spa & personalized concierge. Pure indulgence.</p>
+            <ul class="pkg-includes">
+              <li><i class="fas fa-hotel"></i> 5-star pool villa</li>
+              <li><i class="fas fa-yacht"></i> Private yacht charter</li>
+              <li><i class="fas fa-spa"></i> Full body spa</li>
+              <li><i class="fas fa-utensils"></i> Gourmet dining included</li>
+            </ul>
+            <div class="pkg-footer">
+              <div class="pkg-price">
+                <span class="p-old">₹80,000</span>
+                <span class="p-new">₹59,999</span>
+                <span class="p-per">per couple</span>
+              </div>
+              <a href="packages.html#luxury-retreat" class="btn btn-primary btn-sm">Book Now</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="pkg-card" data-category="budget" id="pkg-dayout">
+          <div class="pkg-img-wrap">
+            <img src="images/packages_collage.png" alt="Goa Full Day Out Package sightseeing and activities" class="pkg-img" loading="lazy" />
+            <div class="pkg-duration"><i class="fas fa-clock"></i> Day Trip</div>
+          </div>
+          <div class="pkg-body">
+            <div class="pkg-tags">
+              <span class="pkg-tag">Budget</span>
+              <span class="pkg-tag pkg-tag-blue">Day Trip</span>
+            </div>
+            <h3 class="pkg-title">Goa Full Day Out</h3>
+            <p class="pkg-desc">A whirlwind day experiencing beaches, water sports, Goa cuisine & heritage sightseeing. Great for short trips!</p>
+            <ul class="pkg-includes">
+              <li><i class="fas fa-water"></i> 3 water sports</li>
+              <li><i class="fas fa-church"></i> Heritage tour</li>
+              <li><i class="fas fa-utensils"></i> Goan lunch</li>
+              <li><i class="fas fa-car"></i> AC transport</li>
+            </ul>
+            <div class="pkg-footer">
+              <div class="pkg-price">
+                <span class="p-old">₹3,500</span>
+                <span class="p-new">₹2,499</span>
+                <span class="p-per">per person</span>
+              </div>
+              <a href="packages.html#dayout" class="btn btn-primary btn-sm">Book Now</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="section-cta">
+        <a href="packages.html" class="btn btn-primary btn-lg">
+          <i class="fas fa-suitcase-rolling"></i> View All Packages
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STAY SECTION ===== -->
+  <section id="stay" class="section stay-section" aria-labelledby="stay-heading">
+    <div class="stay-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow"><i class="fas fa-hotel"></i> Where to Stay</p>
+        <h2 id="stay-heading" class="section-title">Hotels, Resorts & Apartments</h2>
+        <p class="section-subtitle">Handpicked stays in Goa's best locations — beachfront, budget-friendly, family & luxury options available</p>
+      </div>
+
+      <div class="stay-grid">
+
+        <article class="stay-card" id="stay-resort">
+          <img src="images/hotel_resort.png" alt="Luxury beachfront resort in Goa with swimming pool" class="stay-img" loading="lazy" />
+          <div class="stay-info">
+            <div class="stay-type">Luxury Resort</div>
+            <h3 class="stay-name">The Goa Beach Palace</h3>
+            <div class="stay-loc"><i class="fas fa-map-marker-alt"></i> Calangute Beach, North Goa</div>
+            <div class="stay-rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-count">4.9 (1,240 reviews)</span>
+            </div>
+            <div class="stay-amenities">
+              <span><i class="fas fa-swimming-pool"></i> Pool</span>
+              <span><i class="fas fa-wifi"></i> WiFi</span>
+              <span><i class="fas fa-utensils"></i> Restaurant</span>
+              <span><i class="fas fa-spa"></i> Spa</span>
+            </div>
+            <div class="stay-price-row">
+              <span class="stay-price">₹5,500 <small>/night</small></span>
+              <a href="stay.html#resort" class="btn btn-outline-small">View Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="stay-card" id="stay-apartment">
+          <img src="images/packages_collage.png" alt="Cozy Goa apartment for rent near beach" class="stay-img" loading="lazy" />
+          <div class="stay-info">
+            <div class="stay-type" style="background: #2d8653;">Apartment / Villa</div>
+            <h3 class="stay-name">Sunset Beach Apartments</h3>
+            <div class="stay-loc"><i class="fas fa-map-marker-alt"></i> Baga Beach, North Goa</div>
+            <div class="stay-rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-count">4.6 (830 reviews)</span>
+            </div>
+            <div class="stay-amenities">
+              <span><i class="fas fa-kitchen-set"></i> Kitchen</span>
+              <span><i class="fas fa-wifi"></i> WiFi</span>
+              <span><i class="fas fa-car"></i> Parking</span>
+              <span><i class="fas fa-wind"></i> AC</span>
+            </div>
+            <div class="stay-price-row">
+              <span class="stay-price">₹2,800 <small>/night</small></span>
+              <a href="stay.html#apartment" class="btn btn-outline-small">View Details</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="stay-card" id="stay-budgethotel">
+          <img src="images/hero_beach.png" alt="Affordable beach hotel in South Goa" class="stay-img" loading="lazy" />
+          <div class="stay-info">
+            <div class="stay-type" style="background: #e67e22;">Budget Hotel</div>
+            <h3 class="stay-name">Palms & Sands Inn</h3>
+            <div class="stay-loc"><i class="fas fa-map-marker-alt"></i> Palolem Beach, South Goa</div>
+            <div class="stay-rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-count">4.4 (560 reviews)</span>
+            </div>
+            <div class="stay-amenities">
+              <span><i class="fas fa-swimming-pool"></i> Pool</span>
+              <span><i class="fas fa-wifi"></i> WiFi</span>
+              <span><i class="fas fa-utensils"></i> Restaurant</span>
+              <span><i class="fas fa-umbrella-beach"></i> Beach Access</span>
+            </div>
+            <div class="stay-price-row">
+              <span class="stay-price">₹1,200 <small>/night</small></span>
+              <a href="stay.html#budget-hotel" class="btn btn-outline-small">View Details</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="section-cta">
+        <a href="stay.html" class="btn btn-primary btn-lg">
+          <i class="fas fa-bed"></i> Explore All Stays
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section testimonials-section" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow"><i class="fas fa-comments"></i> Customer Stories</p>
+        <h2 id="testimonials-heading" class="section-title">What Our Travelers Say</h2>
+        <p class="section-subtitle">Real reviews from real adventurers who experienced Goa with us</p>
+      </div>
+
+      <div class="testimonials-slider" id="testimonialsSlider">
+        <div class="testimonials-track" id="testimonialsTrack">
+
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"Scuba diving experience was absolutely incredible! The instructor Ravi was so professional and made me feel safe the whole time. Saw the most stunning coral reefs. 10/10 would recommend!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar">P</div>
+              <div>
+                <strong>Priya Sharma</strong>
+                <span>Mumbai, Maharashtra</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"Booked the honeymoon package and it was everything we dreamed of. Sunset cruise, spa, private beach — Goa Escape handled everything perfectly. Our trip was magical!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background:#e74c8b;">R</div>
+              <div>
+                <strong>Rohit & Anjali</strong>
+                <span>Pune, Maharashtra</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"The family package was worth every rupee! Kids loved the water sports and dolphin cruise. Staff was very helpful with our elderly parents too. Will definitely come back!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background:#2d8653;">K</div>
+              <div>
+                <strong>Kavita Nair</strong>
+                <span>Bangalore, Karnataka</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <p class="testi-text">"Party boat was the highlight of our trip! The DJ was amazing, drinks were flowing and the view was stunning. Goa Escape made it seamless — booked online, picked us up, dropped us back. Superb!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background:#8e44ad;">A</div>
+              <div>
+                <strong>Arjun Kapoor</strong>
+                <span>Delhi, NCR</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-card">
+            <div class="testi-stars">★★★★☆</div>
+            <p class="testi-text">"Very affordable packages compared to others. Water sports at Baga were so much fun! The banana boat and parasailing were my favourites. Good value for money, highly recommend!"</p>
+            <div class="testi-author">
+              <div class="testi-avatar" style="background:#e67e22;">S</div>
+              <div>
+                <strong>Sneha Patel</strong>
+                <span>Surat, Gujarat</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Slider Controls -->
+      <div class="testi-controls">
+        <button class="testi-btn" id="testiBtnPrev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+        <div class="testi-dots" id="testiDots"></div>
+        <button class="testi-btn" id="testiBtnNext" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner section" aria-labelledby="cta-heading">
+    <div class="cta-bg">
+      <img src="images/water_sports.png" alt="" class="cta-bg-img" loading="lazy" aria-hidden="true" />
+      <div class="cta-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="cta-content">
+        <h2 id="cta-heading" class="cta-title">Ready for Your Goa Adventure?</h2>
+        <p class="cta-desc">Don't miss out on the best deals! Book today and get up to <strong>30% OFF</strong> on all packages. Limited spots available!</p>
+        <div class="cta-actions">
+          <a href="contact.html#booking" class="btn btn-white btn-lg">
+            <i class="fas fa-calendar-alt"></i> Book Your Package
+          </a>
+          <a href="tel:+919876543210" class="btn btn-outline-white btn-lg">
+            <i class="fas fa-phone"></i> Call Us Now
+          </a>
+        </div>
+        <p class="cta-note"><i class="fas fa-lock"></i> Secure booking · No hidden charges · Instant confirmation</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+        <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#0a1628"/>
+      </svg>
+    </div>
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+
+          <!-- Brand -->
+          <div class="footer-col footer-brand">
+            <a href="index.html" class="footer-logo">
+              <i class="fas fa-umbrella-beach"></i> Goa Escape
+            </a>
+            <p class="footer-tagline">Your gateway to the ultimate Goa experience. Water sports, packages, stays & unforgettable memories.</p>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Goa Escape on Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-link" aria-label="Goa Escape on Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social-link" aria-label="Goa Escape on YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="#" class="social-link" aria-label="Goa Escape on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="water-sports.html">Water Sports</a></li>
+              <li><a href="cruises.html">Dinner Cruise</a></li>
+              <li><a href="cruises.html#party-boat">Party Boat</a></li>
+              <li><a href="water-sports.html#scuba">Scuba Diving</a></li>
+            </ul>
+          </div>
+
+          <!-- Packages -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Packages</h4>
+            <ul class="footer-links">
+              <li><a href="packages.html">All Packages</a></li>
+              <li><a href="packages.html#honeymoon">Honeymoon Package</a></li>
+              <li><a href="packages.html#family">Family Package</a></li>
+              <li><a href="packages.html#adventure">Adventure Package</a></li>
+              <li><a href="packages.html#budget">Budget Getaway</a></li>
+              <li><a href="stay.html">Hotels & Stays</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="footer-col">
+            <h4 class="footer-heading">Contact Us</h4>
+            <ul class="footer-contact">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Calangute Beach Road, North Goa – 403516, India</span>
+              </li>
+              <li>
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:+919876543210">+91 98765 43210</a>
+              </li>
+              <li>
+                <i class="fab fa-whatsapp"></i>
+                <a href="https://wa.me/919876543210">WhatsApp Us</a>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:hello@goaescape.com">hello@goaescape.com</a>
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                <span>Open Daily: 7:00 AM – 10:00 PM</span>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2025 Goa Escape. All rights reserved. | Designed with <i class="fas fa-heart" style="color:#ff4d6d"></i> in Goa</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Refund Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== FLOATING WHATSAPP BUTTON ===== -->
+  <a href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20know%20more%20about%20Goa%20packages!" 
+     class="whatsapp-float" 
+     id="whatsapp-float-btn"
+     target="_blank" 
+     rel="noopener noreferrer"
+     aria-label="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">Chat on WhatsApp!</span>
+  </a>
+
+  <!-- ===== BACK TO TOP ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+  <script src="js/perf.js" defer></script>
+</body>
+</html>

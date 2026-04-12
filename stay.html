@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0a1628" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="description"
+        content="Hotels, resorts, apartments & villas in Goa. Find the best beachfront stays, budget hotels & luxury resorts at the best prices. Book your Goa accommodation with Goa Escape." />
+    <meta name="keywords"
+        content="hotels in Goa, Goa beach resort, Goa apartment, luxury resort Goa, budget hotel Goa, Goa accommodation, beachfront hotel Goa, Goa villa rental" />
+    <title>Hotels, Resorts & Apartments in Goa | Best Stays – Goa Escape</title>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+</head>
+
+<body>
+
+    <div id="loader" class="loader">
+        <div class="loader-inner">
+            <div class="wave-loader"><span></span><span></span><span></span><span></span><span></span></div>
+            <p class="loader-text">Goa Escape</p>
+        </div>
+    </div>
+
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><span class="logo-icon"><i class="fas fa-umbrella-beach"></i></span>
+                <div class="logo-text"><span class="logo-main">Goa Escape</span><span class="logo-sub">Feel the
+                        Vibe</span></div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="water-sports.html" class="nav-link">Water Sports</a></li>
+                <li><a href="packages.html" class="nav-link">Packages</a></li>
+                <li class="dropdown"><a href="#" class="nav-link dropdown-toggle">Experiences <i
+                            class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="cruises.html"><i class="fas fa-ship"></i> Dinner Cruise</a></li>
+                        <li><a href="cruises.html#party-boat"><i class="fas fa-music"></i> Party Boat</a></li>
+                        <li><a href="water-sports.html#scuba"><i class="fas fa-fish"></i> Scuba Diving</a></li>
+                    </ul>
+                </li>
+                <li><a href="stay.html" class="nav-link active">Stay</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="contact.html#booking" class="mobile-book-btn"><i class="fas fa-calendar-check"></i> Book
+                        Now</a></li>
+            </ul>
+            <div class="nav-cta"><a href="contact.html#booking" class="btn btn-primary"><i
+                        class="fas fa-calendar-check"></i> Book Now</a></div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"
+                aria-controls="navLinks"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- ===== MOBILE SIDEBAR ===== -->
+    <div id="sidebarBackdrop" class="sidebar-backdrop" aria-hidden="true"></div>
+    <aside id="mobileSidebar" class="mobile-sidebar" role="dialog" aria-label="Navigation Menu" aria-modal="true">
+        <div class="sidebar-header">
+            <a href="index.html" class="sidebar-logo">
+                <span class="sidebar-logo-icon"><i class="fas fa-umbrella-beach"></i></span>
+                <span class="sidebar-logo-text">
+                    <span class="sidebar-logo-main">Goa Escape</span>
+                    <span class="sidebar-logo-sub">Feel the Vibe</span>
+                </span>
+            </a>
+            <button id="sidebarClose" class="sidebar-close" aria-label="Close menu"><i
+                    class="fas fa-times"></i></button>
+        </div>
+        <div class="sidebar-quick">
+            <a href="contact.html#booking" class="sidebar-quick-btn"><i class="fas fa-calendar-check"></i>Book Now</a>
+            <a href="tel:+919876543210" class="sidebar-quick-btn"><i class="fas fa-phone"></i>Call Us</a>
+            <a href="https://wa.me/919876543210" class="sidebar-quick-btn" target="_blank" rel="noopener"><i
+                    class="fab fa-whatsapp"></i>WhatsApp</a>
+        </div>
+        <p class="sidebar-nav-label">Navigation</p>
+        <ul class="sidebar-nav">
+            <li><a href="index.html"><span class="sidebar-nav-icon" style="background:rgba(0,119,182,0.18);"><i
+                            class="fas fa-home" style="color:#90e0ef;"></i></span> Home</a></li>
+            <li><a href="water-sports.html"><span class="sidebar-nav-icon" style="background:rgba(0,119,182,0.18);"><i
+                            class="fas fa-water" style="color:#90e0ef;"></i></span> Water Sports</a></li>
+            <li><a href="packages.html"><span class="sidebar-nav-icon" style="background:rgba(244,164,53,0.18);"><i
+                            class="fas fa-suitcase" style="color:#f4a435;"></i></span> Packages</a></li>
+            <li>
+                <button id="sidebarExpToggle" class="sidebar-sub-toggle">
+                    <span class="sidebar-nav-icon" style="background:rgba(231,76,139,0.18);"><i class="fas fa-star"
+                            style="color:#e74c8b;"></i></span>
+                    Experiences <i class="fas fa-chevron-down sidebar-toggle-arrow"></i>
+                </button>
+                <div id="sidebarExpContent" class="sidebar-sub-content">
+                    <ul class="sidebar-sub">
+                        <li><a href="cruises.html"><i class="fas fa-ship"></i> Dinner Cruise</a></li>
+                        <li><a href="cruises.html#party-boat"><i class="fas fa-music"></i> Party Boat</a></li>
+                        <li><a href="water-sports.html#scuba"><i class="fas fa-fish"></i> Scuba Diving</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="stay.html" class="active"><span class="sidebar-nav-icon"
+                        style="background:rgba(45,134,83,0.18);"><i class="fas fa-hotel"
+                            style="color:#2d8653;"></i></span> Stay</a></li>
+            <li><a href="contact.html"><span class="sidebar-nav-icon" style="background:rgba(255,107,53,0.18);"><i
+                            class="fas fa-envelope" style="color:#ff6b35;"></i></span> Contact</a></li>
+        </ul>
+        <a href="contact.html#booking" class="sidebar-book-btn"><i class="fas fa-calendar-check"></i> Book Your
+            Adventure</a>
+        <p class="sidebar-nav-label" style="padding-top:0;">Follow Us</p>
+        <div class="sidebar-social">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/919876543210" aria-label="WhatsApp" target="_blank" rel="noopener"><i
+                    class="fab fa-whatsapp"></i></a>
+        </div>
+        <p class="sidebar-footer">&copy; 2025 Goa Escape &bull; hello@goaescape.com</p>
+    </aside>
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+        <div class="page-hero-bg"><img src="images/hotel_resort.png" alt="Luxury beach resort in Goa" />
+            <div class="page-hero-overlay"></div>
+        </div>
+        <div class="page-hero-content">
+            <div class="page-breadcrumb"><a href="index.html">Home</a><i class="fas fa-circle"></i><span>Stay</span>
+            </div>
+            <h1 class="page-hero-title">Where to Stay in Goa</h1>
+            <p class="page-hero-subtitle">Curated hotels, resorts, apartments & villas for every budget</p>
+        </div>
+    </div>
+
+    <!-- Filter -->
+    <section style="background: var(--off-white); padding: 2.5rem 0 1rem;">
+        <div class="container">
+            <div class="stay-filter-row">
+                <strong style="font-size:0.9rem; color:var(--text-muted);"><i class="fas fa-filter"></i> Filter
+                    by:</strong>
+                <select class="stay-filter-select" id="filterType" aria-label="Filter by property type">
+                    <option value="">All Types</option>
+                    <option value="resort">Luxury Resort</option>
+                    <option value="hotel">Hotel</option>
+                    <option value="apartment">Apartment/Vila</option>
+                    <option value="budget">Budget Stay</option>
+                </select>
+                <select class="stay-filter-select" id="filterLocation" aria-label="Filter by location">
+                    <option value="">All Locations</option>
+                    <option value="north">North Goa</option>
+                    <option value="south">South Goa</option>
+                </select>
+                <select class="stay-filter-select" id="filterBudget" aria-label="Filter by budget">
+                    <option value="">All Budgets</option>
+                    <option value="budget">₹1,000–₹2,000 / night</option>
+                    <option value="mid">₹2,000–₹5,000 / night</option>
+                    <option value="luxury">₹5,000+ / night</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotels Grid -->
+    <section class="section" style="background: var(--off-white); padding-top: 2rem;" aria-labelledby="stay-heading">
+        <div class="container">
+            <div class="section-header" style="margin-bottom:2rem;">
+                <h2 id="stay-heading" class="section-title">Our Handpicked Stays</h2>
+                <p class="section-subtitle">All properties are personally vetted by the Goa Escape team for quality,
+                    location & value</p>
+            </div>
+
+            <div class="hotels-grid" id="hotelsGrid">
+
+                <article class="hotel-card" id="resort" data-type="resort" data-loc="north" data-budget="luxury">
+                    <div class="hotel-img-wrap"><img src="images/hotel_resort.png"
+                            alt="The Goa Beach Palace luxury resort" class="hotel-img" loading="lazy" />
+                        <div class="hotel-stars-badge">★★★★★ 5 Star</div>
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-category">Luxury Beach Resort · North Goa</div>
+                        <h3 class="hotel-name">The Goa Beach Palace</h3>
+                        <div class="hotel-loc"><i class="fas fa-map-marker-alt"></i>Calangute Beach, North Goa</div>
+                        <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem;"><span
+                                style="color:var(--gold); font-size:0.88rem;">★★★★★</span><span
+                                style="font-size:0.78rem; color:var(--text-muted);">4.9 (1,240 reviews)</span></div>
+                        <div class="hotel-amen">
+                            <span><i class="fas fa-swimming-pool"></i> Pool</span>
+                            <span><i class="fas fa-wifi"></i> WiFi</span>
+                            <span><i class="fas fa-utensils"></i> Restaurant</span>
+                            <span><i class="fas fa-spa"></i> Spa</span>
+                            <span><i class="fas fa-dumbbell"></i> Gym</span>
+                            <span><i class="fas fa-umbrella-beach"></i> Beach Access</span>
+                        </div>
+                        <div class="hotel-foot">
+                            <div class="hotel-price">₹6,500 <small>/night</small></div>
+                            <a href="contact.html#booking" class="btn btn-outline-small">Book Now</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="hotel-card" id="apartment" data-type="apartment" data-loc="north" data-budget="mid">
+                    <div class="hotel-img-wrap"><img src="images/hero_beach.png" alt="Sunset Beach Apartments Baga Goa"
+                            class="hotel-img" loading="lazy" />
+                        <div class="hotel-stars-badge">★★★★☆ Premium</div>
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-category">Apartment / Villa · North Goa</div>
+                        <h3 class="hotel-name">Sunset Beach Apartments</h3>
+                        <div class="hotel-loc"><i class="fas fa-map-marker-alt"></i>Baga Beach, North Goa</div>
+                        <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem;"><span
+                                style="color:var(--gold); font-size:0.88rem;">★★★★☆</span><span
+                                style="font-size:0.78rem; color:var(--text-muted);">4.6 (830 reviews)</span></div>
+                        <div class="hotel-amen">
+                            <span><i class="fas fa-kitchen-set"></i> Kitchen</span>
+                            <span><i class="fas fa-wifi"></i> WiFi</span>
+                            <span><i class="fas fa-car"></i> Parking</span>
+                            <span><i class="fas fa-wind"></i> AC</span>
+                            <span><i class="fas fa-tv"></i> Smart TV</span>
+                        </div>
+                        <div class="hotel-foot">
+                            <div class="hotel-price">₹2,800 <small>/night</small></div>
+                            <a href="contact.html#booking" class="btn btn-outline-small">Book Now</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="hotel-card" id="budget-hotel" data-type="budget" data-loc="south" data-budget="budget">
+                    <div class="hotel-img-wrap"><img src="images/packages_collage.png"
+                            alt="Palms & Sands Inn Budget Hotel South Goa" class="hotel-img" loading="lazy" />
+                        <div class="hotel-stars-badge">★★★★☆ Good Value</div>
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-category">Budget Hotel · South Goa</div>
+                        <h3 class="hotel-name">Palms & Sands Inn</h3>
+                        <div class="hotel-loc"><i class="fas fa-map-marker-alt"></i>Palolem Beach, South Goa</div>
+                        <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem;"><span
+                                style="color:var(--gold); font-size:0.88rem;">★★★★☆</span><span
+                                style="font-size:0.78rem; color:var(--text-muted);">4.4 (560 reviews)</span></div>
+                        <div class="hotel-amen">
+                            <span><i class="fas fa-swimming-pool"></i> Pool</span>
+                            <span><i class="fas fa-wifi"></i> WiFi</span>
+                            <span><i class="fas fa-utensils"></i> Restaurant</span>
+                            <span><i class="fas fa-umbrella-beach"></i> Beach Access</span>
+                        </div>
+                        <div class="hotel-foot">
+                            <div class="hotel-price">₹1,200 <small>/night</small></div>
+                            <a href="contact.html#booking" class="btn btn-outline-small">Book Now</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="hotel-card" id="north-resort" data-type="resort" data-loc="north" data-budget="luxury">
+                    <div class="hotel-img-wrap"><img src="images/hotel_resort.png"
+                            alt="Anjuna Sea View Resort luxury North Goa" class="hotel-img" loading="lazy" />
+                        <div class="hotel-stars-badge">★★★★★ 5 Star</div>
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-category">Luxury Resort · North Goa</div>
+                        <h3 class="hotel-name">Anjuna Sea View Resort</h3>
+                        <div class="hotel-loc"><i class="fas fa-map-marker-alt"></i>Anjuna, North Goa</div>
+                        <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem;"><span
+                                style="color:var(--gold); font-size:0.88rem;">★★★★★</span><span
+                                style="font-size:0.78rem; color:var(--text-muted);">4.8 (920 reviews)</span></div>
+                        <div class="hotel-amen">
+                            <span><i class="fas fa-swimming-pool"></i> Infinity Pool</span>
+                            <span><i class="fas fa-spa"></i> Spa</span>
+                            <span><i class="fas fa-utensils"></i> Fine Dining</span>
+                            <span><i class="fas fa-cocktail"></i> Rooftop Bar</span>
+                        </div>
+                        <div class="hotel-foot">
+                            <div class="hotel-price">₹8,000 <small>/night</small></div>
+                            <a href="contact.html#booking" class="btn btn-outline-small">Book Now</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="hotel-card" id="south-villa" data-type="apartment" data-loc="south" data-budget="mid">
+                    <div class="hotel-img-wrap"><img src="images/hero_beach.png" alt="South Goa private villa rental"
+                            class="hotel-img" loading="lazy" />
+                        <div class="hotel-stars-badge">★★★★☆ Private Villa</div>
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-category">Private Villa · South Goa</div>
+                        <h3 class="hotel-name">Colva Beach Private Villa</h3>
+                        <div class="hotel-loc"><i class="fas fa-map-marker-alt"></i>Colva Beach, South Goa</div>
+                        <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem;"><span
+                                style="color:var(--gold); font-size:0.88rem;">★★★★☆</span><span
+                                style="font-size:0.78rem; color:var(--text-muted);">4.7 (340 reviews)</span></div>
+                        <div class="hotel-amen">
+                            <span><i class="fas fa-swimming-pool"></i> Private Pool</span>
+                            <span><i class="fas fa-kitchen-set"></i> Full Kitchen</span>
+                            <span><i class="fas fa-car"></i> Parking</span>
+                            <span><i class="fas fa-wifi"></i> WiFi</span>
+                        </div>
+                        <div class="hotel-foot">
+                            <div class="hotel-price">₹4,500 <small>/night</small></div>
+                            <a href="contact.html#booking" class="btn btn-outline-small">Book Now</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="hotel-card" id="budget-hostel" data-type="budget" data-loc="north" data-budget="budget">
+                    <div class="hotel-img-wrap"><img src="images/packages_collage.png"
+                            alt="Backpacker hostel North Goa budget stay" class="hotel-img" loading="lazy" />
+                        <div class="hotel-stars-badge">★★★☆☆ Budget Friendly</div>
+                    </div>
+                    <div class="hotel-body">
+                        <div class="hotel-category">Budget Hostel · North Goa</div>
+                        <h3 class="hotel-name">Beach Bum Hostel</h3>
+                        <div class="hotel-loc"><i class="fas fa-map-marker-alt"></i>Arambol Beach, North Goa</div>
+                        <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem;"><span
+                                style="color:var(--gold); font-size:0.88rem;">★★★☆☆</span><span
+                                style="font-size:0.78rem; color:var(--text-muted);">4.2 (280 reviews)</span></div>
+                        <div class="hotel-amen">
+                            <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                            <span><i class="fas fa-coffee"></i> Café</span>
+                            <span><i class="fas fa-users"></i> Social lounge</span>
+                            <span><i class="fas fa-bicycle"></i> Bike rental</span>
+                        </div>
+                        <div class="hotel-foot">
+                            <div class="hotel-price">₹600 <small>/bed/night</small></div>
+                            <a href="contact.html#booking" class="btn btn-outline-small">Book Now</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why book stays with us -->
+    <section class="section" style="background: linear-gradient(135deg, #f0f8ff, #fff9f5);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Book Through Goa Escape?</h2>
+            </div>
+            <div class="why-benefits-grid">
+
+                <div
+                    style="text-align:center; padding:2rem; background:white; border-radius:1rem; box-shadow:var(--shadow-sm);">
+                    <i class="fas fa-tag" style="font-size:2.5rem; color:var(--primary); margin-bottom:1rem;"></i>
+                    <h4 style="font-size:1rem; font-weight:700; margin-bottom:0.5rem;">Best Price Guarantee</h4>
+                    <p style="font-size:0.88rem; color:var(--text-muted);">We match any lower price you find and add a
+                        free activity to your booking!</p>
+                </div>
+                <div
+                    style="text-align:center; padding:2rem; background:white; border-radius:1rem; box-shadow:var(--shadow-sm);">
+                    <i class="fas fa-handshake" style="font-size:2.5rem; color:var(--green); margin-bottom:1rem;"></i>
+                    <h4 style="font-size:1rem; font-weight:700; margin-bottom:0.5rem;">Bundle & Save</h4>
+                    <p style="font-size:0.88rem; color:var(--text-muted);">Book your hotel + activities together and
+                        save up to 25% on your total trip cost.</p>
+                </div>
+                <div
+                    style="text-align:center; padding:2rem; background:white; border-radius:1rem; box-shadow:var(--shadow-sm);">
+                    <i class="fas fa-star" style="font-size:2.5rem; color:var(--gold); margin-bottom:1rem;"></i>
+                    <h4 style="font-size:1rem; font-weight:700; margin-bottom:0.5rem;">Verified Reviews Only</h4>
+                    <p style="font-size:0.88rem; color:var(--text-muted);">All ratings are from real guests who stayed
+                        through Goa Escape — 100% genuine.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave"><svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+                <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#0a1628" />
+            </svg></div>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col footer-brand"><a href="index.html" class="footer-logo"><i
+                                class="fas fa-umbrella-beach"></i> Goa Escape</a>
+                        <p class="footer-tagline">Your gateway to the ultimate Goa experience.</p>
+                        <div class="social-links"><a href="#" class="social-link" aria-label="Instagram"><i
+                                    class="fab fa-instagram"></i></a><a href="#" class="social-link"
+                                aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#"
+                                class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="water-sports.html">Water Sports</a></li>
+                            <li><a href="packages.html">Packages</a></li>
+                            <li><a href="cruises.html">Cruises</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Stay Types</h4>
+                        <ul class="footer-links">
+                            <li><a href="#resort">Luxury Resorts</a></li>
+                            <li><a href="#apartment">Apartments</a></li>
+                            <li><a href="#budget-hotel">Budget Hotels</a></li>
+                            <li><a href="#south-villa">Private Villas</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Contact</h4>
+                        <ul class="footer-contact">
+                            <li><i class="fas fa-phone-alt"></i><a href="tel:+919876543210">+91 98765 43210</a></li>
+                            <li><i class="fab fa-whatsapp"></i><a href="https://wa.me/919876543210">WhatsApp Us</a></li>
+                            <li><i class="fas fa-envelope"></i><a
+                                    href="mailto:hello@goaescape.com">hello@goaescape.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Goa Escape. All rights reserved.</p>
+                <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        aria-label="WhatsApp"><i class="fab fa-whatsapp"></i><span class="whatsapp-tooltip">Chat on WhatsApp!</span></a>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+    <script src="js/main.js"></script>
+    <script src="js/perf.js" defer></script>
+</body>
+
+</html>

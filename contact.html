@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0a1628" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="description"
+        content="Contact Goa Escape to book water sports, packages, dinner cruises & hotels in Goa. Call, WhatsApp or fill out our quick booking form for instant confirmation." />
+    <meta name="keywords"
+        content="contact Goa Escape, book Goa tour, Goa booking form, Goa travel enquiry, water sports booking Goa" />
+    <title>Contact & Book – Goa Escape | Instant Goa Booking</title>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+</head>
+
+<body>
+
+    <div id="loader" class="loader">
+        <div class="loader-inner">
+            <div class="wave-loader"><span></span><span></span><span></span><span></span><span></span></div>
+            <p class="loader-text">Goa Escape</p>
+        </div>
+    </div>
+
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><span class="logo-icon"><i class="fas fa-umbrella-beach"></i></span>
+                <div class="logo-text"><span class="logo-main">Goa Escape</span><span class="logo-sub">Feel the
+                        Vibe</span></div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="water-sports.html" class="nav-link">Water Sports</a></li>
+                <li><a href="packages.html" class="nav-link">Packages</a></li>
+                <li class="dropdown"><a href="#" class="nav-link dropdown-toggle">Experiences <i
+                            class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="cruises.html"><i class="fas fa-ship"></i> Dinner Cruise</a></li>
+                        <li><a href="cruises.html#party-boat"><i class="fas fa-music"></i> Party Boat</a></li>
+                        <li><a href="water-sports.html#scuba"><i class="fas fa-fish"></i> Scuba Diving</a></li>
+                    </ul>
+                </li>
+                <li><a href="stay.html" class="nav-link">Stay</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+            <div class="nav-cta"><a href="#booking" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book
+                    Now</a></div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"
+                aria-controls="navLinks"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- ===== MOBILE SIDEBAR ===== -->
+    <div id="sidebarBackdrop" class="sidebar-backdrop" aria-hidden="true"></div>
+    <aside id="mobileSidebar" class="mobile-sidebar" role="dialog" aria-label="Navigation Menu" aria-modal="true">
+        <div class="sidebar-header">
+            <a href="index.html" class="sidebar-logo">
+                <span class="sidebar-logo-icon"><i class="fas fa-umbrella-beach"></i></span>
+                <span class="sidebar-logo-text">
+                    <span class="sidebar-logo-main">Goa Escape</span>
+                    <span class="sidebar-logo-sub">Feel the Vibe</span>
+                </span>
+            </a>
+            <button id="sidebarClose" class="sidebar-close" aria-label="Close menu"><i
+                    class="fas fa-times"></i></button>
+        </div>
+        <div class="sidebar-quick">
+            <a href="#booking" class="sidebar-quick-btn"><i class="fas fa-calendar-check"></i>Book Now</a>
+            <a href="tel:+919876543210" class="sidebar-quick-btn"><i class="fas fa-phone"></i>Call Us</a>
+            <a href="https://wa.me/919876543210" class="sidebar-quick-btn" target="_blank" rel="noopener"><i
+                    class="fab fa-whatsapp"></i>WhatsApp</a>
+        </div>
+        <p class="sidebar-nav-label">Navigation</p>
+        <ul class="sidebar-nav">
+            <li><a href="index.html"><span class="sidebar-nav-icon" style="background:rgba(0,119,182,0.18);"><i
+                            class="fas fa-home" style="color:#90e0ef;"></i></span> Home</a></li>
+            <li><a href="water-sports.html"><span class="sidebar-nav-icon" style="background:rgba(0,119,182,0.18);"><i
+                            class="fas fa-water" style="color:#90e0ef;"></i></span> Water Sports</a></li>
+            <li><a href="packages.html"><span class="sidebar-nav-icon" style="background:rgba(244,164,53,0.18);"><i
+                            class="fas fa-suitcase" style="color:#f4a435;"></i></span> Packages</a></li>
+            <li>
+                <button id="sidebarExpToggle" class="sidebar-sub-toggle">
+                    <span class="sidebar-nav-icon" style="background:rgba(231,76,139,0.18);"><i class="fas fa-star"
+                            style="color:#e74c8b;"></i></span>
+                    Experiences <i class="fas fa-chevron-down sidebar-toggle-arrow"></i>
+                </button>
+                <div id="sidebarExpContent" class="sidebar-sub-content">
+                    <ul class="sidebar-sub">
+                        <li><a href="cruises.html"><i class="fas fa-ship"></i> Dinner Cruise</a></li>
+                        <li><a href="cruises.html#party-boat"><i class="fas fa-music"></i> Party Boat</a></li>
+                        <li><a href="water-sports.html#scuba"><i class="fas fa-fish"></i> Scuba Diving</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="stay.html"><span class="sidebar-nav-icon" style="background:rgba(45,134,83,0.18);"><i
+                            class="fas fa-hotel" style="color:#2d8653;"></i></span> Stay</a></li>
+            <li><a href="contact.html" class="active"><span class="sidebar-nav-icon"
+                        style="background:rgba(255,107,53,0.18);"><i class="fas fa-envelope"
+                            style="color:#ff6b35;"></i></span> Contact</a></li>
+        </ul>
+        <a href="#booking" class="sidebar-book-btn"><i class="fas fa-calendar-check"></i> Book Your Adventure</a>
+        <p class="sidebar-nav-label" style="padding-top:0;">Follow Us</p>
+        <div class="sidebar-social">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/919876543210" aria-label="WhatsApp" target="_blank" rel="noopener"><i
+                    class="fab fa-whatsapp"></i></a>
+        </div>
+        <p class="sidebar-footer">&copy; 2025 Goa Escape &bull; hello@goaescape.com</p>
+    </aside>
+
+    <!-- Page Hero -->
+    <div class="page-hero" style="height: 40vh; min-height: 280px;">
+        <div class="page-hero-bg"><img src="images/hero_beach.png" alt="Contact Goa Escape" />
+            <div class="page-hero-overlay"></div>
+        </div>
+        <div class="page-hero-content">
+            <div class="page-breadcrumb"><a href="index.html">Home</a><i class="fas fa-circle"></i><span>Contact</span>
+            </div>
+            <h1 class="page-hero-title">Get in Touch</h1>
+            <p class="page-hero-subtitle">We're here to help plan your perfect Goa adventure</p>
+        </div>
+    </div>
+
+    <!-- Contact + Booking Section -->
+    <section id="booking" class="section" aria-labelledby="booking-heading">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <p class="section-eyebrow"><i class="fas fa-headset"></i> We're Here For You</p>
+                    <h2 id="booking-heading">Let's Plan Your <em style="color:var(--primary);">Goa Escape!</em></h2>
+                    <p>Have questions? Want to book a custom package? Simply reach out via WhatsApp, call us, or fill in
+                        the booking form and we'll get back to you within 2 hours!</p>
+
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="ci-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="ci-text">
+                                <strong>Call / WhatsApp</strong>
+                                <a href="tel:+919876543210">+91 98765 43210</a>
+                                <a href="tel:+919876543211">+91 98765 43211 (Alternate)</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="ci-icon" style="background:linear-gradient(135deg,#25d366,#128c7e);"><i
+                                    class="fab fa-whatsapp"></i></div>
+                            <div class="ci-text">
+                                <strong>WhatsApp (Fast Response)</strong>
+                                <a href="https://wa.me/919876543210?text=Hi%2C%20I%27d%20like%20to%20book%20a%20Goa%20package!"
+                                    target="_blank" rel="noopener">Chat with us instantly on WhatsApp</a>
+                                <span>Usually replies within 5–10 minutes</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="ci-icon" style="background:linear-gradient(135deg,#e84393,#c0392b);"><i
+                                    class="fas fa-envelope"></i></div>
+                            <div class="ci-text">
+                                <strong>Email Us</strong>
+                                <a href="mailto:hello@goaescape.com">hello@goaescape.com</a>
+                                <a href="mailto:bookings@goaescape.com">bookings@goaescape.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="ci-icon"
+                                style="background:linear-gradient(135deg,var(--accent),var(--accent-dark));"><i
+                                    class="fas fa-map-marker-alt"></i></div>
+                            <div class="ci-text">
+                                <strong>Visit Our Office</strong>
+                                <span>Near Calangute Beach, Calangute</span>
+                                <span>North Goa – 403516, India</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="ci-icon" style="background:linear-gradient(135deg,var(--green),#1e5c38);"><i
+                                    class="fas fa-clock"></i></div>
+                            <div class="ci-text">
+                                <strong>Working Hours</strong>
+                                <span>Monday – Sunday: 7:00 AM – 10:00 PM</span>
+                                <span>Open All Year Round (including holidays)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick WhatsApp CTA -->
+                    <a href="https://wa.me/919876543210?text=Hi%2C%20I%20want%20to%20know%20more%20about%20Goa%20Escape%20packages!"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg"
+                        style="background:linear-gradient(135deg,#25d366,#128c7e); box-shadow: 0 4px 20px rgba(37,211,102,0.4);">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp Now
+                    </a>
+                </div>
+
+                <!-- Booking Form -->
+                <div class="booking-form" id="bookingForm-wrapper">
+                    <h3><i class="fas fa-calendar-check" style="color:var(--primary);"></i> Book Your Experience</h3>
+                    <p>Fill in your details and we'll confirm your booking within 2 hours!</p>
+
+                    <form id="bookingForm" autocomplete="on" novalidate>
+                        <div id="formFields">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="firstName">First Name <span
+                                            style="color:var(--accent);">*</span></label>
+                                    <input type="text" id="firstName" name="firstName" class="form-control"
+                                        placeholder="Your first name" required autocomplete="given-name" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name <span style="color:var(--accent);">*</span></label>
+                                    <input type="text" id="lastName" name="lastName" class="form-control"
+                                        placeholder="Your last name" required autocomplete="family-name" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email Address <span style="color:var(--accent);">*</span></label>
+                                    <input type="email" id="email" name="email" class="form-control"
+                                        placeholder="your@email.com" required autocomplete="email" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone / WhatsApp <span
+                                            style="color:var(--accent);">*</span></label>
+                                    <input type="tel" id="phone" name="phone" class="form-control"
+                                        placeholder="+91 98765 43210" required autocomplete="tel" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="travelDate">Travel Date <span
+                                            style="color:var(--accent);">*</span></label>
+                                    <input type="date" id="travelDate" name="travelDate" class="form-control" required
+                                        min="2025-01-01" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="persons">Number of Persons</label>
+                                    <select id="persons" name="persons" class="form-control">
+                                        <option value="1">1 Person</option>
+                                        <option value="2" selected>2 People</option>
+                                        <option value="3-5">3 – 5 People</option>
+                                        <option value="6-10">6 – 10 People</option>
+                                        <option value="10+">10+ (Group)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group full">
+                                    <label for="serviceType">Interested In <span
+                                            style="color:var(--accent);">*</span></label>
+                                    <select id="serviceType" name="serviceType" class="form-control" required>
+                                        <option value="">Select service...</option>
+                                        <option value="water-sports">Water Sports Package</option>
+                                        <option value="scuba">Scuba Diving</option>
+                                        <option value="dinner-cruise">Dinner Cruise</option>
+                                        <option value="party-boat">Party Boat</option>
+                                        <option value="dolphin-cruise">Dolphin Watching Cruise</option>
+                                        <option value="private-yacht">Private Yacht Charter</option>
+                                        <option value="hotel">Hotel / Resort Booking</option>
+                                        <option value="package-budget">Budget Tour Package</option>
+                                        <option value="package-honeymoon">Honeymoon Package</option>
+                                        <option value="package-family">Family Package</option>
+                                        <option value="package-adventure">Adventure Package</option>
+                                        <option value="package-luxury">Luxury Package</option>
+                                        <option value="custom">Custom Package (Tell us your needs)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group full">
+                                    <label for="budget">Approximate Budget</label>
+                                    <select id="budget" name="budget" class="form-control">
+                                        <option value="">No preference</option>
+                                        <option value="under-5k">Under ₹5,000 per person</option>
+                                        <option value="5k-10k">₹5,000 – ₹10,000 per person</option>
+                                        <option value="10k-20k">₹10,000 – ₹20,000 per person</option>
+                                        <option value="20k+">₹20,000+ per person</option>
+                                    </select>
+                                </div>
+                                <div class="form-group full">
+                                    <label for="message">Special Requests / Message</label>
+                                    <textarea id="message" name="message" class="form-control"
+                                        placeholder="Tell us anything specific — dietary needs, anniversary celebration, pickup location, custom itinerary..."></textarea>
+                                </div>
+                            </div>
+
+                            <div
+                                style="display:flex; align-items:center; gap:0.75rem; margin:1.25rem 0 1rem; font-size:0.82rem; color:var(--text-muted);">
+                                <input type="checkbox" id="agreeTerms" name="agreeTerms" required
+                                    style="width:16px; height:16px;" />
+                                <label for="agreeTerms">I agree to the <a href="#" style="color:var(--primary);">Terms
+                                        of Service</a> and <a href="#" style="color:var(--primary);">Privacy
+                                        Policy</a></label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary form-submit" id="submitBookingBtn">
+                                <i class="fas fa-paper-plane"></i> Send Booking Request
+                            </button>
+
+                            <p
+                                style="text-align:center; font-size:0.78rem; color:var(--text-muted); margin-top:0.75rem;">
+                                <i class="fas fa-lock" style="color:var(--green);"></i> 100% secure · No spam · We'll
+                                respond within 2 hours
+                            </p>
+                        </div>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div id="formSuccess" class="form-success">
+                        <i class="fas fa-check-circle"></i>
+                        <h4>Booking Request Received! 🎉</h4>
+                        <p>Thank you! Our team will contact you within 2 hours via WhatsApp or call to confirm your Goa
+                            Escape booking.</p>
+                        <a href="index.html" class="btn btn-primary" style="margin-top:1.5rem;"><i
+                                class="fas fa-home"></i> Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section map-section" style="padding: 4rem 0;" aria-labelledby="map-heading">
+        <div class="container">
+            <div class="section-header" style="margin-bottom:2rem;">
+                <h2 id="map-heading" class="section-title">Find Us in Goa</h2>
+                <p class="section-subtitle">We're located right near Calangute Beach — the heart of North Goa</p>
+            </div>
+            <div class="map-wrap">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3844.8!2d73.7541!3d15.5449!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfb6c6c1c06155%3A0x5ea6c0f1af3f7bda!2sCalangute%20Beach%2C%20Goa!5e0!3m2!1sen!2sin!4v1000000"
+                    width="100%" height="420" style="border:0; width:100%; height:100%; display:block;"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    title="Goa Escape Location Map - Calangute Beach, Goa"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq-section" aria-labelledby="faq-contact-heading">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow"><i class="fas fa-question-circle"></i> FAQ</p>
+                <h2 id="faq-contact-heading" class="section-title">Common Questions</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">How quickly will you confirm my booking? <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">We confirm bookings within 2 hours during working hours (7 AM – 10 PM). For
+                        bookings submitted at night, you'll receive confirmation by 9 AM the next morning. WhatsApp is
+                        the fastest way to reach us!</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Do I need to pay in advance? <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">A 20–30% advance is required to confirm bookings, paid securely via UPI,
+                        bank transfer, or online payment. The balance is paid upon arrival in Goa. We don't charge
+                        cancellation fees if you cancel 48+ hours before.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Can you arrange airport pickup from Goa Airport? <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">Yes! We provide affordable airport transfers from Dabolim International
+                        Airport and Mopa Airport to your hotel anywhere in Goa. Share your flight details when booking
+                        and we'll arrange everything.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Can I build a fully custom package? <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">Absolutely! We specialize in building custom packages. Just tell us your
+                        dates, group size, interests and budget via the form or WhatsApp, and we'll design a perfect Goa
+                        itinerary just for you.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What if there is bad weather on my activity day? <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">Safety is our top priority. If activities are cancelled due to bad weather
+                        or rough sea conditions, we reschedule to the next available slot at no extra cost, or issue a
+                        full refund upon request.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave"><svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+                <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#0a1628" />
+            </svg></div>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col footer-brand"><a href="index.html" class="footer-logo"><i
+                                class="fas fa-umbrella-beach"></i> Goa Escape</a>
+                        <p class="footer-tagline">Your gateway to the ultimate Goa experience. Water sports, packages,
+                            stays & unforgettable memories.</p>
+                        <div class="social-links"><a href="#" class="social-link" aria-label="Instagram"><i
+                                    class="fab fa-instagram"></i></a><a href="#" class="social-link"
+                                aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#"
+                                class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a><a href="#"
+                                class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="water-sports.html">Water Sports</a></li>
+                            <li><a href="packages.html">Packages</a></li>
+                            <li><a href="cruises.html">Cruises</a></li>
+                            <li><a href="stay.html">Hotels & Stay</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="water-sports.html#scuba">Scuba Diving</a></li>
+                            <li><a href="cruises.html">Dinner Cruise</a></li>
+                            <li><a href="cruises.html#party-boat">Party Boat</a></li>
+                            <li><a href="packages.html#honeymoon">Honeymoon Package</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Contact Us</h4>
+                        <ul class="footer-contact">
+                            <li><i class="fas fa-map-marker-alt"></i><span>Calangute Beach Road, North Goa –
+                                    403516</span></li>
+                            <li><i class="fas fa-phone-alt"></i><a href="tel:+919876543210">+91 98765 43210</a></li>
+                            <li><i class="fab fa-whatsapp"></i><a href="https://wa.me/919876543210">WhatsApp Us</a></li>
+                            <li><i class="fas fa-envelope"></i><a
+                                    href="mailto:hello@goaescape.com">hello@goaescape.com</a></li>
+                            <li><i class="fas fa-clock"></i><span>Open Daily: 7AM – 10PM</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Goa Escape. All rights reserved. | Designed with <i class="fas fa-heart"
+                        style="color:#ff4d6d"></i> in Goa</p>
+                <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a
+                        href="#">Refund Policy</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        aria-label="WhatsApp"><i class="fab fa-whatsapp"></i><span class="whatsapp-tooltip">Chat on WhatsApp!</span></a>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+    <script src="js/main.js"></script>
+    <script src="js/perf.js" defer></script>
+    <script>
+        // Booking form enhanced handling
+        const bookingForm = document.getElementById('bookingForm');
+        const formSuccess = document.getElementById('formSuccess');
+        const formFields = document.getElementById('formFields');
+
+        bookingForm?.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = document.getElementById('submitBookingBtn');
+            const agreeTerms = document.getElementById('agreeTerms');
+
+            if (!agreeTerms.checked) {
+                alert('Please agree to the Terms of Service to continue.');
+                return;
+            }
+
+            const original = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            btn.disabled = true;
+
+            await new Promise(resolve => setTimeout(resolve, 2000));
+
+            if (formFields && formSuccess) {
+                formFields.style.display = 'none';
+                formSuccess.classList.add('show');
+            }
+
+            btn.innerHTML = original;
+            btn.disabled = false;
+        });
+    </script>
+</body>
+
+</html>

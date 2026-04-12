@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0a1628" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="description"
+        content="Goa dinner cruise & party boat – experience a magical sunset cruise on Mandovi River with live music, Goan cuisine & folk dance. DJ party boat with unlimited fun!" />
+    <meta name="keywords"
+        content="dinner cruise Goa, Mandovi river cruise, party boat Goa, Goa sunset cruise, Goa boat party, evening cruise Goa, Goa DJ boat" />
+    <title>Dinner Cruise & Party Boat Goa | Sunset River Cruise – Goa Escape</title>
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=Dancing+Script:wght@600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+</head>
+
+<body>
+
+    <div id="loader" class="loader">
+        <div class="loader-inner">
+            <div class="wave-loader"><span></span><span></span><span></span><span></span><span></span></div>
+            <p class="loader-text">Goa Escape</p>
+        </div>
+    </div>
+
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><span class="logo-icon"><i class="fas fa-umbrella-beach"></i></span>
+                <div class="logo-text"><span class="logo-main">Goa Escape</span><span class="logo-sub">Feel the
+                        Vibe</span></div>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="water-sports.html" class="nav-link">Water Sports</a></li>
+                <li><a href="packages.html" class="nav-link">Packages</a></li>
+                <li class="dropdown"><a href="#" class="nav-link dropdown-toggle active">Experiences <i
+                            class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="cruises.html"><i class="fas fa-ship"></i> Dinner Cruise</a></li>
+                        <li><a href="cruises.html#party-boat"><i class="fas fa-music"></i> Party Boat</a></li>
+                        <li><a href="water-sports.html#scuba"><i class="fas fa-fish"></i> Scuba Diving</a></li>
+                    </ul>
+                </li>
+                <li><a href="stay.html" class="nav-link">Stay</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="contact.html#booking" class="mobile-book-btn"><i class="fas fa-calendar-check"></i> Book
+                        Now</a></li>
+            </ul>
+            <div class="nav-cta"><a href="contact.html#booking" class="btn btn-primary"><i
+                        class="fas fa-calendar-check"></i> Book Now</a></div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"
+                aria-controls="navLinks"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- ===== MOBILE SIDEBAR ===== -->
+    <div id="sidebarBackdrop" class="sidebar-backdrop" aria-hidden="true"></div>
+    <aside id="mobileSidebar" class="mobile-sidebar" role="dialog" aria-label="Navigation Menu" aria-modal="true">
+        <div class="sidebar-header">
+            <a href="index.html" class="sidebar-logo">
+                <span class="sidebar-logo-icon"><i class="fas fa-umbrella-beach"></i></span>
+                <span class="sidebar-logo-text">
+                    <span class="sidebar-logo-main">Goa Escape</span>
+                    <span class="sidebar-logo-sub">Feel the Vibe</span>
+                </span>
+            </a>
+            <button id="sidebarClose" class="sidebar-close" aria-label="Close menu"><i
+                    class="fas fa-times"></i></button>
+        </div>
+        <div class="sidebar-quick">
+            <a href="contact.html#booking" class="sidebar-quick-btn"><i class="fas fa-calendar-check"></i>Book Now</a>
+            <a href="tel:+919876543210" class="sidebar-quick-btn"><i class="fas fa-phone"></i>Call Us</a>
+            <a href="https://wa.me/919876543210" class="sidebar-quick-btn" target="_blank" rel="noopener"><i
+                    class="fab fa-whatsapp"></i>WhatsApp</a>
+        </div>
+        <p class="sidebar-nav-label">Navigation</p>
+        <ul class="sidebar-nav">
+            <li><a href="index.html"><span class="sidebar-nav-icon" style="background:rgba(0,119,182,0.18);"><i
+                            class="fas fa-home" style="color:#90e0ef;"></i></span> Home</a></li>
+            <li><a href="water-sports.html"><span class="sidebar-nav-icon" style="background:rgba(0,119,182,0.18);"><i
+                            class="fas fa-water" style="color:#90e0ef;"></i></span> Water Sports</a></li>
+            <li><a href="packages.html"><span class="sidebar-nav-icon" style="background:rgba(244,164,53,0.18);"><i
+                            class="fas fa-suitcase" style="color:#f4a435;"></i></span> Packages</a></li>
+            <li>
+                <button id="sidebarExpToggle" class="sidebar-sub-toggle open">
+                    <span class="sidebar-nav-icon" style="background:rgba(231,76,139,0.18);"><i class="fas fa-star"
+                            style="color:#e74c8b;"></i></span>
+                    Experiences <i class="fas fa-chevron-down sidebar-toggle-arrow"></i>
+                </button>
+                <div id="sidebarExpContent" class="sidebar-sub-content open">
+                    <ul class="sidebar-sub">
+                        <li><a href="cruises.html" class="active"><i class="fas fa-ship"></i> Dinner Cruise</a></li>
+                        <li><a href="cruises.html#party-boat"><i class="fas fa-music"></i> Party Boat</a></li>
+                        <li><a href="water-sports.html#scuba"><i class="fas fa-fish"></i> Scuba Diving</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="stay.html"><span class="sidebar-nav-icon" style="background:rgba(45,134,83,0.18);"><i
+                            class="fas fa-hotel" style="color:#2d8653;"></i></span> Stay</a></li>
+            <li><a href="contact.html"><span class="sidebar-nav-icon" style="background:rgba(255,107,53,0.18);"><i
+                            class="fas fa-envelope" style="color:#ff6b35;"></i></span> Contact</a></li>
+        </ul>
+        <a href="contact.html#booking" class="sidebar-book-btn"><i class="fas fa-calendar-check"></i> Book Your
+            Adventure</a>
+        <p class="sidebar-nav-label" style="padding-top:0;">Follow Us</p>
+        <div class="sidebar-social">
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/919876543210" aria-label="WhatsApp" target="_blank" rel="noopener"><i
+                    class="fab fa-whatsapp"></i></a>
+        </div>
+        <p class="sidebar-footer">&copy; 2025 Goa Escape &bull; hello@goaescape.com</p>
+    </aside>
+
+    <!-- Page Hero -->
+    <div class="page-hero">
+        <div class="page-hero-bg"><img src="images/dinner_cruise.png" alt="Dinner cruise Goa on Mandovi River" />
+            <div class="page-hero-overlay"></div>
+        </div>
+        <div class="page-hero-content">
+            <div class="page-breadcrumb"><a href="index.html">Home</a><i class="fas fa-circle"></i><span>Cruises</span>
+            </div>
+            <h1 class="page-hero-title">Cruise Experiences</h1>
+            <p class="page-hero-subtitle">Dinner cruise · Party boat · Sunset sailing on the Mandovi River</p>
+        </div>
+    </div>
+
+    <!-- Cruise Options -->
+    <section class="section" aria-labelledby="cruise-heading">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow"><i class="fas fa-ship"></i> On The Water</p>
+                <h2 id="cruise-heading" class="section-title">Choose Your Cruise Experience</h2>
+                <p class="section-subtitle">From romantic sunset dinners to wild party nights — we have the perfect
+                    cruise for every mood</p>
+            </div>
+
+            <div class="cruise-grid">
+
+                <!-- Sunset Dinner Cruise -->
+                <article class="cruise-card" id="dinner-cruise">
+                    <div style="overflow:hidden; height:280px;"><img src="images/dinner_cruise.png"
+                            alt="Sunset dinner cruise on Mandovi River Goa" class="cruise-img" loading="lazy" /></div>
+                    <div class="cruise-body">
+                        <div class="cruise-type cruise-type-sunset"><i class="fas fa-sun"></i> Sunset Dinner Cruise
+                        </div>
+                        <h2 class="cruise-title">Mandovi Sunset Dinner Cruise</h2>
+                        <p class="cruise-desc">Glide along the scenic Mandovi River as the sun sets, painting the sky in
+                            spectacular orange and golden hues. Enjoy a lavish Goan buffet, live folk music, traditional
+                            dance performances, and unmatched views of Old Goa.</p>
+                        <ul class="cruise-highlights">
+                            <li><i class="fas fa-check"></i> Multi-cuisine buffet dinner (Goan + Continental + Indian)
+                            </li>
+                            <li><i class="fas fa-check"></i> Live folk music & Goan Mando dance performance</li>
+                            <li><i class="fas fa-check"></i> Spectacular sunset views from the Mandovi River</li>
+                            <li><i class="fas fa-check"></i> Welcome drink & complimentary mocktails</li>
+                            <li><i class="fas fa-check"></i> Air-conditioned + open-air deck seating</li>
+                            <li><i class="fas fa-check"></i> Expert crew & professional guides onboard</li>
+                        </ul>
+                        <div class="cruise-slots">
+                            <span class="slot-badge"><i class="fas fa-clock"></i> 6:00 PM – 8:00 PM (Sunset)</span>
+                            <span class="slot-badge"><i class="fas fa-moon"></i> 8:30 PM – 10:30 PM (Evening)</span>
+                        </div>
+                        <div class="cruise-footer">
+                            <div class="cruise-price">
+                                <span class="cp-label">Starting from</span>
+                                <span class="cp-amount">₹1,200</span>
+                                <span class="cp-per">per person · Children (5–12): ₹600</span>
+                            </div>
+                            <a href="contact.html#booking" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Party Boat -->
+                <article class="cruise-card" id="party-boat">
+                    <div style="overflow:hidden; height:280px; position:relative;">
+                        <img src="images/dinner_cruise.png" alt="DJ Party Boat in Goa at night" class="cruise-img"
+                            loading="lazy" />
+                        <div
+                            style="position:absolute; top:1rem; right:1rem; background:var(--pink); color:white; font-size:0.78rem; font-weight:700; padding:0.3rem 0.9rem; border-radius:999px;">
+                            🎉 Party Night</div>
+                    </div>
+                    <div class="cruise-body">
+                        <div class="cruise-type cruise-type-party"><i class="fas fa-music"></i> Party Boat</div>
+                        <h2 class="cruise-title">Goa DJ Party Boat</h2>
+                        <p class="cruise-desc">The most legendary boat party in Goa! Sail into the open sea with a
+                            pumping DJ, a rooftop dance floor, unlimited cocktails (optional), and a vibe that doesn't
+                            stop. Whether it's your birthday, bachelor party or just a wild Friday night — this is THE
+                            experience!</p>
+                        <ul class="cruise-highlights">
+                            <li><i class="fas fa-check"></i> Professional DJ with latest Bollywood, EDM & Goa trance
+                            </li>
+                            <li><i class="fas fa-check"></i> Open bar option (cocktails, mocktails, beer, shots)</li>
+                            <li><i class="fas fa-check"></i> Rooftop dance floor & lower deck chill zone</li>
+                            <li><i class="fas fa-check"></i> Light snacks & starters included</li>
+                            <li><i class="fas fa-check"></i> Special birthday/bachelor party setups available</li>
+                            <li><i class="fas fa-check"></i> Life jackets & 24/7 safety crew onboard</li>
+                        </ul>
+                        <div class="cruise-slots">
+                            <span class="slot-badge"><i class="fas fa-sun"></i> 3:00 PM – 6:00 PM (Afternoon)</span>
+                            <span class="slot-badge"><i class="fas fa-moon"></i> 8:00 PM – 11:00 PM (Night)</span>
+                        </div>
+                        <div class="cruise-footer">
+                            <div class="cruise-price">
+                                <span class="cp-label">Starting from</span>
+                                <span class="cp-amount">₹1,500</span>
+                                <span class="cp-per">per person · Open bar: +₹800</span>
+                            </div>
+                            <a href="contact.html#booking" class="btn btn-primary">Book Party</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Dolphin + Snorkeling Cruise -->
+                <article class="cruise-card" id="dolphin-cruise">
+                    <div style="overflow:hidden; height:280px; position:relative;">
+                        <img src="images/packages_collage.png" alt="Dolphin spotting and snorkeling cruise Goa"
+                            class="cruise-img" loading="lazy" />
+                        <div
+                            style="position:absolute; top:1rem; right:1rem; background:var(--green); color:white; font-size:0.78rem; font-weight:700; padding:0.3rem 0.9rem; border-radius:999px;">
+                            🐬 Family</div>
+                    </div>
+                    <div class="cruise-body">
+                        <div class="cruise-type" style="background: rgba(45,134,83,0.12); color: var(--green);"><i
+                                class="fas fa-fish"></i> Adventure Cruise</div>
+                        <h2 class="cruise-title">Dolphin & Snorkeling Cruise</h2>
+                        <p class="cruise-desc">Start your morning with a magical boat journey into the Arabian Sea to
+                            spot playful wild dolphins in their natural habitat, then snorkel over vibrant coral reefs.
+                            A once-in-a-lifetime experience for the whole family.</p>
+                        <ul class="cruise-highlights">
+                            <li><i class="fas fa-check"></i> Guided dolphin spotting in Arabian Sea (99% success rate)
+                            </li>
+                            <li><i class="fas fa-check"></i> Snorkeling at Grand Island coral reef</li>
+                            <li><i class="fas fa-check"></i> Snorkeling equipment provided</li>
+                            <li><i class="fas fa-check"></i> Fresh fruit & light breakfast onboard</li>
+                            <li><i class="fas fa-check"></i> Certified safety crew</li>
+                        </ul>
+                        <div class="cruise-slots">
+                            <span class="slot-badge"><i class="fas fa-sun"></i> 7:30 AM – 11:00 AM (Morning)</span>
+                        </div>
+                        <div class="cruise-footer">
+                            <div class="cruise-price">
+                                <span class="cp-label">Starting from</span>
+                                <span class="cp-amount">₹900</span>
+                                <span class="cp-per">per person · Children (5–12): ₹500</span>
+                            </div>
+                            <a href="contact.html#booking" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Private Yacht -->
+                <article class="cruise-card" id="private-yacht">
+                    <div style="overflow:hidden; height:280px; position:relative;">
+                        <img src="images/dinner_cruise.png" alt="Private yacht charter in Goa" class="cruise-img"
+                            loading="lazy" />
+                        <div
+                            style="position:absolute; top:1rem; right:1rem; background: #c9a84c; color:white; font-size:0.78rem; font-weight:700; padding:0.3rem 0.9rem; border-radius:999px;">
+                            👑 Exclusive</div>
+                    </div>
+                    <div class="cruise-body">
+                        <div class="cruise-type" style="background: rgba(201,168,76,0.12); color: #a07830;"><i
+                                class="fas fa-crown"></i> Private Charter</div>
+                        <h2 class="cruise-title">Private Yacht Charter</h2>
+                        <p class="cruise-desc">Rent an exclusive yacht for just you and your group. Perfect for
+                            proposal, anniversary, private party or luxury corporate event. Customizable itinerary,
+                            gourmet catering, and full privacy guaranteed.</p>
+                        <ul class="cruise-highlights">
+                            <li><i class="fas fa-check"></i> Fully private yacht (6–20 persons)</li>
+                            <li><i class="fas fa-check"></i> Customizable route & duration</li>
+                            <li><i class="fas fa-check"></i> Private chef & gourmet dining onboard</li>
+                            <li><i class="fas fa-check"></i> Fishing, snorkeling & swimming stops</li>
+                            <li><i class="fas fa-check"></i> Professional photographer available</li>
+                        </ul>
+                        <div class="cruise-slots">
+                            <span class="slot-badge"><i class="fas fa-clock"></i> 3–8 hours (customizable)</span>
+                            <span class="slot-badge"><i class="fas fa-users"></i> Up to 20 persons</span>
+                        </div>
+                        <div class="cruise-footer">
+                            <div class="cruise-price">
+                                <span class="cp-label">Starting from</span>
+                                <span class="cp-amount">₹25,000</span>
+                                <span class="cp-per">per trip (up to 10 pax)</span>
+                            </div>
+                            <a href="contact.html#booking" class="btn btn-primary">Enquire Now</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq-section" aria-labelledby="faq-heading">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow"><i class="fas fa-question-circle"></i> FAQ</p>
+                <h2 id="faq-heading" class="section-title">Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">What is the best time to take the dinner cruise in Goa? <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">The sunset dinner cruise (6:00 PM) is most popular as you get to watch the
+                        stunning Goa sunset from the river. The season runs from October to May, though cruises operate
+                        year-round.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Is the party boat appropriate for children? <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">The afternoon party boat (3 PM) is family-friendly. The night party boat (8
+                        PM) is adults only (18+). Please mention if you're bringing children when booking so we can
+                        recommend the best option.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Do I need to know swimming for the dolphin cruise? <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">No swimming ability is required. Life jackets are provided to all
+                        passengers. Non-swimmers can still participate in snorkeling with our guided support.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Can I bring my own food & drinks? <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">Outside food is generally not allowed as meals are included in the package.
+                        For private yacht charters, we can accommodate special dietary requests in advance through our
+                        chef.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What is the cancellation policy? <i
+                            class="fas fa-chevron-down"></i></button>
+                    <div class="faq-answer">Free cancellation up to 48 hours before departure for a full refund.
+                        Cancellations within 48 hours will receive 50% refund. No refund for no-shows. In case of bad
+                        weather, we reschedule at no charge.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-banner section" style="padding: 5rem 0;">
+        <div class="cta-bg"><img src="images/dinner_cruise.png" alt="" class="cta-bg-img" aria-hidden="true" />
+            <div class="cta-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Set Sail on Your Goa Dream</h2>
+                <p class="cta-desc">Book today and enjoy limited-time early bird discounts of up to 20%!</p>
+                <div class="cta-actions">
+                    <a href="contact.html#booking" class="btn btn-white btn-lg"><i class="fas fa-ship"></i> Book Your
+                        Cruise</a>
+                    <a href="tel:+919876543210" class="btn btn-outline-white btn-lg"><i class="fas fa-phone"></i> Call
+                        Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave"><svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+                <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#0a1628" />
+            </svg></div>
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col footer-brand"><a href="index.html" class="footer-logo"><i
+                                class="fas fa-umbrella-beach"></i> Goa Escape</a>
+                        <p class="footer-tagline">Your gateway to the ultimate Goa experience.</p>
+                        <div class="social-links"><a href="#" class="social-link" aria-label="Instagram"><i
+                                    class="fab fa-instagram"></i></a><a href="#" class="social-link"
+                                aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a href="#"
+                                class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a></div>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Cruises</h4>
+                        <ul class="footer-links">
+                            <li><a href="#dinner-cruise">Dinner Cruise</a></li>
+                            <li><a href="#party-boat">Party Boat</a></li>
+                            <li><a href="#dolphin-cruise">Dolphin Cruise</a></li>
+                            <li><a href="#private-yacht">Private Yacht</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-heading">More</h4>
+                        <ul class="footer-links">
+                            <li><a href="water-sports.html">Water Sports</a></li>
+                            <li><a href="packages.html">Packages</a></li>
+                            <li><a href="stay.html">Hotels</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-heading">Contact</h4>
+                        <ul class="footer-contact">
+                            <li><i class="fas fa-phone-alt"></i><a href="tel:+919876543210">+91 98765 43210</a></li>
+                            <li><i class="fab fa-whatsapp"></i><a href="https://wa.me/919876543210">WhatsApp Us</a></li>
+                            <li><i class="fas fa-envelope"></i><a
+                                    href="mailto:hello@goaescape.com">hello@goaescape.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Goa Escape. All rights reserved.</p>
+                <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        aria-label="WhatsApp"><i class="fab fa-whatsapp"></i><span class="whatsapp-tooltip">Chat on WhatsApp!</span></a>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+    <script src="js/main.js"></script>
+    <script src="js/perf.js" defer></script>
+</body>
+
+</html>

@@ -927,6 +927,12 @@ video {
         height: 220px;
     }
 
+    /* Fix inline height on cruise card image wrappers */
+    .cruise-card > div:first-child {
+        height: auto !important;
+        max-height: 240px;
+    }
+
     .cruise-footer {
         flex-direction: column;
         gap: 1rem;
@@ -936,6 +942,11 @@ video {
     .cruise-footer .btn {
         width: 100%;
         justify-content: center;
+    }
+
+    .cruise-slots {
+        flex-direction: column;
+        gap: 0.5rem;
     }
 
     /* --- STAY PAGE --- */
@@ -969,6 +980,12 @@ video {
 
     .contact-info h2 {
         font-size: 1.6rem;
+    }
+
+    /* Contact info — WhatsApp button full width */
+    .contact-info .btn-lg {
+        width: 100%;
+        justify-content: center;
     }
 
     /* --- MAP --- */
@@ -1013,6 +1030,28 @@ video {
     .safety-strip-grid {
         grid-template-columns: repeat(2, 1fr) !important;
         gap: 1rem !important;
+    }
+
+    /* Testimonials scroll snap */
+    .testimonials-slider {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        cursor: grab;
+    }
+
+    .testimonials-slider::-webkit-scrollbar {
+        display: none;
+    }
+
+    .testimonials-track {
+        scroll-behavior: smooth;
+    }
+
+    .testi-card {
+        scroll-snap-align: start;
+        flex-shrink: 0;
     }
 }
 
@@ -1060,30 +1099,45 @@ video {
         height: 180px;
     }
 
-    /* Package cards */
-    .pkg-img-wrap {
-        height: 180px;
-    }
+    /* Package cards *//* ===== PACKAGE CARD MOBILE IMPROVEMENT ===== */
+@media (max-width: 768px) {
 
-    .pkg-body {
-        padding: 1.25rem;
-    }
+  .pkg-card {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  }
 
-    .pkg-includes {
-        grid-template-columns: 1fr;
-    }
+  .pkg-body {
+    padding: 1.4rem !important;
+  }
 
-    .pkg-footer {
-        flex-direction: column;
-        gap: 0.75rem;
-        align-items: flex-start;
-    }
+  .pkg-title {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+  }
 
-    .pkg-footer .btn {
-        width: 100%;
-        justify-content: center;
-    }
+  .pkg-desc {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
 
+  .pkg-includes {
+    margin: 10px 0;
+  }
+
+  .pkg-footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .pkg-footer .btn {
+    width: 100%;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+
+}   
     /* Stay cards */
     .stay-info {
         padding: 1.25rem;
@@ -1091,6 +1145,18 @@ video {
 
     .stay-amenities span {
         font-size: 0.72rem;
+    }
+
+    .stay-price-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .stay-price-row .btn-outline-small {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
     }
 
     /* Why section */
@@ -1172,6 +1238,11 @@ video {
         flex-direction: column;
     }
 
+    .cruise-card > div:first-child {
+        height: auto !important;
+        max-height: 200px;
+    }
+
     /* Hotel cards */
     .hotel-body {
         padding: 1.25rem;
@@ -1188,6 +1259,16 @@ video {
         justify-content: center;
     }
 
+    /* Hotel amenities wrap */
+    .hotel-amen {
+        gap: 0.35rem;
+    }
+
+    .hotel-amen span {
+        font-size: 0.7rem;
+        padding: 0.18rem 0.5rem;
+    }
+
     /* Contact form */
     .booking-form {
         padding: 1.5rem 1rem;
@@ -1199,6 +1280,17 @@ video {
 
     .form-control {
         font-size: 0.88rem;
+    }
+
+    /* Contact info items */
+    .contact-item {
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
+    .ci-icon {
+        width: 42px;
+        height: 42px;
     }
 
     /* FAQ */
@@ -1252,7 +1344,18 @@ video {
 
     /* Gallery */
     .gallery-grid {
+        grid-template-columns: 1fr 1fr;
         gap: 0.5rem;
+    }
+
+    .gallery-item:first-child {
+        grid-column: 1 / -1;
+    }
+
+    /* Package search input — override inline styles */
+    #pkgSearchInput {
+        font-size: 0.88rem !important;
+        padding: 0.75rem 1rem 0.75rem 2.5rem !important;
     }
 }
 
@@ -1324,6 +1427,26 @@ video {
         width: 38px;
         height: 38px;
     }
+
+    /* Stay amenities — very small screens */
+    .stay-amenities {
+        gap: 0.35rem;
+    }
+
+    .stay-amenities span {
+        font-size: 0.68rem;
+        padding: 0.2rem 0.5rem;
+    }
+
+    /* Cruise price smaller */
+    .cp-amount {
+        font-size: 1.3rem;
+    }
+
+    /* Contact form terms row */
+    .booking-form [style*="display:flex"][style*="align-items:center"][style*="gap:0.75rem"] {
+        flex-wrap: wrap;
+    }
 }
 
 /* ======================================================
@@ -1337,7 +1460,9 @@ video {
     .back-to-top,
     .hero-search-wrap,
     .cta-banner,
-    .testi-controls {
+    .testi-controls,
+    .mobile-sidebar,
+    .sidebar-backdrop {
         display: none !important;
     }
 
@@ -1523,6 +1648,17 @@ video {
     .contact-grid {
         grid-template-columns: 1fr;
     }
+
+    /* Stay filter — row on tablet */
+    .stay-filter-row {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .stay-filter-select {
+        flex: 1;
+        min-width: 180px;
+    }
 }
 
 /* ======================================================
@@ -1677,32 +1813,6 @@ body {
 }
 
 /* ======================================================
-   SCROLL SNAP on testimonials (mobile)
-   ====================================================== */
-@media (max-width: 768px) {
-    .testimonials-slider {
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-        cursor: grab;
-    }
-
-    .testimonials-slider::-webkit-scrollbar {
-        display: none;
-    }
-
-    .testimonials-track {
-        scroll-behavior: smooth;
-    }
-
-    .testi-card {
-        scroll-snap-align: start;
-        flex-shrink: 0;
-    }
-}
-
-/* ======================================================
    PERFORMANCE: Lazy reveal classes
    ====================================================== */
 .reveal,
@@ -1774,4 +1884,288 @@ body {
         text-decoration: none;
         -webkit-tap-highlight-color: transparent;
     }
+}
+
+/* ======================================================
+   INNER PAGE responsive overrides
+   (loaded after pages.css via load order fix)
+   ====================================================== */
+
+/* --- Contact page inline styles fix --- */
+@media (max-width: 768px) {
+    /* Contact page — terms checkbox row */
+    .booking-form div[style*="display:flex"][style*="gap:0.75rem"] {
+        flex-wrap: wrap;
+        gap: 0.5rem !important;
+    }
+
+    /* Fix contact page hero height override */
+    .page-hero[style*="height: 40vh"] {
+        height: 38vh !important;
+        min-height: 240px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Contact page — adjust the terms/privacy text */
+    .booking-form div[style*="display:flex"][style*="gap:0.75rem"] label {
+        font-size: 0.78rem;
+        line-height: 1.4;
+    }
+
+    /* Contact page — map iframe */
+    .map-wrap iframe {
+        min-height: 250px;
+    }
+}
+
+/* --- Package page search input --- */
+@media (max-width: 768px) {
+    /* Package search container */
+    div[style*="max-width: 560px"] {
+        max-width: 100% !important;
+    }
+}
+
+/* --- Stay page: inline-styled benefit cards --- */
+@media (max-width: 576px) {
+    .why-benefits-grid > div[style*="padding:2rem"],
+    .why-benefits-grid > div[style*="padding: 2rem"],
+    .why-benefits-grid > div[style*="padding: 1.5rem"],
+    .why-benefits-grid > div[style*="padding:1.5rem"] {
+        padding: 1.25rem !important;
+    }
+
+    .why-benefits-grid > div i[style*="font-size:2.5rem"],
+    .why-benefits-grid > div i[style*="font-size: 2.5rem"],
+    .why-benefits-grid > div i[style*="font-size:2rem"],
+    .why-benefits-grid > div i[style*="font-size: 2rem"] {
+        font-size: 1.75rem !important;
+    }
+}
+
+/* --- Cruise page: inline img wrapper height --- */
+@media (max-width: 576px) {
+    .cruise-card > div[style*="height:280px"],
+    .cruise-card > div[style*="height: 280px"] {
+        height: auto !important;
+        max-height: 200px !important;
+    }
+}
+
+/* --- Gallery grid responsive --- */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery-item:first-child {
+        grid-column: 1 / -1;
+        grid-row: auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item:first-child {
+        grid-column: auto;
+    }
+}
+
+/* --- Package detail page --- */
+@media (max-width: 768px) {
+    .pd-img-gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .pd-img-gallery img:first-child {
+        grid-column: auto;
+    }
+
+    .pd-sidebar {
+        position: static;
+        top: auto;
+    }
+
+    .pd-price-big {
+        font-size: 1.8rem;
+    }
+}
+
+/* --- SC Price Row on small screens --- */
+@media (max-width: 576px) {
+    .sc-price-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .sc-price-row .btn-outline-small {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* --- Fix CTA desc width on mobile --- */
+@media (max-width: 768px) {
+    .cta-desc {
+        max-width: 100%;
+    }
+}
+
+/* --- Contact items grid on wide mobile --- */
+@media (min-width: 577px) and (max-width: 768px) {
+    .contact-item {
+        flex-direction: row;
+    }
+}
+
+/* ================= MOBILE FINAL FIX ================= */
+@media (max-width: 768px) {
+
+  /* Prevent horizontal scroll */
+  html, body {
+    overflow-x: hidden;
+  }
+
+  * {
+    max-width: 100%;
+  }
+
+  /* FORCE ALL GRIDS TO SINGLE COLUMN */
+  .services-grid,
+  .packages-grid,
+  .stay-grid,
+  .hotels-grid,
+  .ws-grid,
+  .cruise-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  /* Fix cards */
+  .service-card,
+  .pkg-card,
+  .stay-card,
+  .hotel-card,
+  .ws-card,
+  .cruise-card {
+    width: 100% !important;
+  }
+
+  /* Fix images */
+  .sc-img,
+  .pkg-img,
+  .stay-img,
+  .hotel-img,
+  .ws-card-img,
+  .cruise-img {
+    width: 100%;
+    height: auto !important;
+    object-fit: cover;
+  }
+
+  /* Fix filter dropdowns */
+  select,
+  .stay-filter-select {
+    width: 100% !important;
+  }
+
+  /* Fix headings spacing */
+  .section-title {
+    text-align: center;
+  }
+
+  /* Fix cards text overflow */
+  h3, p {
+    word-wrap: break-word;
+  }
+
+  /* Fix container padding */
+  .container {
+    padding: 0 12px !important;
+  }
+
+  /* Fix buttons */
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+}
+/* ===== MOBILE FOOTER FIX ===== */
+@media (max-width: 768px) {
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    gap: 1.5rem;
+  }
+
+  /* First section full width (logo + desc) */
+  .footer-grid > div:first-child {
+    grid-column: 1 / -1;
+  }
+
+  /* Reduce spacing */
+  .footer-top {
+    padding: 2rem 0 1rem;
+  }
+
+  /* Text size adjust */
+  .footer h4 {
+    font-size: 14px;
+  }
+
+  .footer a,
+  .footer p {
+    font-size: 13px;
+  }
+
+  /* Social icons smaller */
+  .social-links a {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+
+  /* Contact section spacing */
+  .contact-item {
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /* Bottom section compact */
+  .footer-bottom {
+    padding: 10px 0;
+    font-size: 12px;
+  }
+
+}
+/* ===== MOBILE HERO TEXT FIX ===== */
+@media (max-width: 768px) {
+
+  .page-hero-title {
+    font-size: 1.6rem !important; /* reduce size */
+    line-height: 1.3;
+    padding: 0 10px;
+  }
+
+  .page-hero-subtitle {
+    font-size: 0.85rem;
+    padding: 0 10px;
+  }
+
+  .page-hero {
+    height: 35vh !important; /* reduce height */
+    min-height: 220px !important;
+  }
+
 }

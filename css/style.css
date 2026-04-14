@@ -4,6 +4,10 @@
    ========================================= */
 
 /* ===== CSS RESET & CUSTOM PROPERTIES ===== */
+/* GLOBAL FIX */
+* {
+  box-sizing: border-box;
+}
 *,
 *::before,
 *::after {

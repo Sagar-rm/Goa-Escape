@@ -145,7 +145,10 @@ document.addEventListener('DOMContentLoaded', () => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const numEl = entry.target.querySelector('.stat-number');
-                    if (numEl) animateCount(numEl);
+if (numEl) {
+  numEl.dataset.count = entry.target.dataset.count; // FIX
+  animateCount(numEl);
+}
                     statObserver.unobserve(entry.target);
                 }
             });
@@ -408,6 +411,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function filterBySearch(query) {
         const q = query.toLowerCase();
         document.querySelectorAll('.pkg-card').forEach(card => {
+            
             const text = card.textContent.toLowerCase();
             card.style.display = text.includes(q) ? '' : 'none';
         });
